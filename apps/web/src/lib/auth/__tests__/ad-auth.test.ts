@@ -285,6 +285,43 @@ describe('authenticateAdUser', () => {
     clearAdEnv();
     await expect(authenticateAdUser('alice.smith', 'pw')).resolves.toBeNull();
   });
+
+  it('reads attributes from the ldapts v8 top-level entry shape', async () => {
+    arrangeSearchInstance([
+      {
+        dn: 'CN=Alice Smith,OU=Users,DC=corp,DC=example,DC=com',
+        distinguishedName: 'CN=Alice Smith,OU=Users,DC=corp,DC=example,DC=com',
+        mail: 'alice@corp.example.com',
+        displayName: 'Top Level Alice',
+      },
+    ]);
+
+    const identity = await authenticateAdUser('alice.smith', 'pw');
+
+    expect(identity).toEqual({
+      dn: 'CN=Alice Smith,OU=Users,DC=corp,DC=example,DC=com',
+      email: 'alice@corp.example.com',
+      name: 'Top Level Alice',
+    });
+  });
+
+  it('matches the required group against a top-level string memberOf', async () => {
+    setAdEnv({
+      AD_LDAP_REQUIRED_GROUP: 'CN=TaskNebula Users,CN=Users,DC=corp,DC=example,DC=com',
+    });
+    arrangeSearchInstance([
+      {
+        dn: 'CN=Alice Smith,CN=Users,DC=corp,DC=example,DC=com',
+        distinguishedName: 'CN=Alice Smith,CN=Users,DC=corp,DC=example,DC=com',
+        mail: 'alice@corp.example.com',
+        memberOf: 'cn=tasknebula users,cn=users,dc=corp,dc=example,dc=com',
+      },
+    ]);
+
+    const identity = await authenticateAdUser('alice.smith', 'pw');
+
+    expect(identity?.email).toBe('alice@corp.example.com');
+  });
 });
 
 describe('resolveAdDatabaseUser', () => {

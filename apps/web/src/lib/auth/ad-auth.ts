@@ -101,8 +101,21 @@ export function buildUserFilter(template: string, username: string): string {
   return template.replace(/\{\{username\}\}/g, () => escapeFilter`${username}`);
 }
 
+/**
+ * Resolve the value of an entry attribute. ldapts v8 surfaces requested
+ * attributes as top-level properties of the entry (`entry.mail`, ...);
+ * older shapes nest them under `entry.attributes`. Supporting both keeps
+ * this robust across ldapts versions and mocked directory entries.
+ */
+function entryValue(entry: AdDirectoryEntry, name: string): unknown {
+  const nested = entry.attributes?.[name];
+  if (nested !== undefined && nested !== null) return nested;
+  const topLevel = (entry as unknown as Record<string, unknown>)[name];
+  return topLevel ?? null;
+}
+
 function entryDn(entry: AdDirectoryEntry): string {
-  const dn = entry.attributes?.distinguishedName ?? entry.dn;
+  const dn = entryValue(entry, 'distinguishedName') ?? entry.dn;
   const raw = Array.isArray(dn) ? dn[0] : dn;
   const text = Buffer.isBuffer(raw) ? raw.toString('utf8') : typeof raw === 'string' ? raw : '';
   return text.trim();
@@ -110,16 +123,16 @@ function entryDn(entry: AdDirectoryEntry): string {
 
 /** First (string) value of an attribute, decoding Buffers from ldapts. */
 function attributeFirst(entry: AdDirectoryEntry, name: string): string | null {
-  const value = entry.attributes?.[name];
-  if (value === undefined || value === null) return null;
+  const value = entryValue(entry, name);
+  if (value === null) return null;
   const raw = Array.isArray(value) ? value[0] : value;
   if (Buffer.isBuffer(raw)) return raw.toString('utf8');
   return typeof raw === 'string' ? raw : null;
 }
 
 function attributeList(entry: AdDirectoryEntry, name: string): string[] {
-  const value = entry.attributes?.[name];
-  if (value === undefined || value === null) return [];
+  const value = entryValue(entry, name);
+  if (value === null) return [];
   const items = Array.isArray(value) ? value : [value];
   return items
     .filter((item): item is Buffer | string => Buffer.isBuffer(item) || typeof item === 'string')
