@@ -85,6 +85,8 @@
     "no_account": "Eikö sinulla ole tiliä?",
     "continue_with_github": "Jatka GitHubilla",
     "continue_with_google": "Jatka Googlella",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Tai jatka sähköpostilla",
     "invalid_credentials": "Virheellinen sähköposti tai salasana",
     "generic_error": "Tapahtui virhe. Yritä uudelleen.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Muistatko salasanasi?",
     "continue_with_github": "Jatka GitHubilla",
     "continue_with_google": "Jatka Googlella",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Tai jatka sähköpostilla",
     "sending": "Lähetetään...",
     "sending_ellipsis": "Lähetetään…",

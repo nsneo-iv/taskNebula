@@ -85,6 +85,8 @@
     "no_account": "Nincs még fiókod?",
     "continue_with_github": "Folytatás GitHubbal",
     "continue_with_google": "Folytatás Google-fiókkal",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Vagy folytatás e-mail-címmel",
     "invalid_credentials": "Érvénytelen e-mail-cím vagy jelszó",
     "generic_error": "Hiba történt. Kérjük, próbáld újra.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Emlékszel a jelszavadra?",
     "continue_with_github": "Folytatás GitHubbal",
     "continue_with_google": "Folytatás Google-fiókkal",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Vagy folytatás e-mail-címmel",
     "sending": "Küldés...",
     "sending_ellipsis": "Küldés…",

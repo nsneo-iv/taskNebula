@@ -85,6 +85,8 @@
     "no_account": "계정이 없으신가요?",
     "continue_with_github": "GitHub로 계속하기",
     "continue_with_google": "Google로 계속하기",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "또는 이메일로 계속하기",
     "invalid_credentials": "이메일 또는 비밀번호가 올바르지 않습니다",
     "generic_error": "오류가 발생했습니다. 다시 시도해 주세요.",
@@ -1029,6 +1031,8 @@
     "remember_password": "비밀번호가 기억나시나요?",
     "continue_with_github": "GitHub로 계속하기",
     "continue_with_google": "Google로 계속하기",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "또는 이메일로 계속하기",
     "sending": "전송 중...",
     "sending_ellipsis": "전송 중…",

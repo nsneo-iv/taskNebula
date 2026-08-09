@@ -85,6 +85,8 @@
     "no_account": "Hesabın yok mu?",
     "continue_with_github": "GitHub ile devam et",
     "continue_with_google": "Google ile devam et",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ya da e-posta ile devam et",
     "invalid_credentials": "Geçersiz e-posta veya parola",
     "generic_error": "Bir hata oluştu. Lütfen tekrar dene.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Parolanızı hatırladınız mı?",
     "continue_with_github": "GitHub ile devam et",
     "continue_with_google": "Google ile devam et",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ya da e-posta ile devam et",
     "sending": "Gönderiliyor...",
     "sending_ellipsis": "Gönderiliyor…",

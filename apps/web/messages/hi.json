@@ -85,6 +85,8 @@
     "no_account": "खाता नहीं है?",
     "continue_with_github": "GitHub के साथ जारी रखें",
     "continue_with_google": "Google के साथ जारी रखें",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "या ईमेल के साथ जारी रखें",
     "invalid_credentials": "अमान्य ईमेल या पासवर्ड",
     "generic_error": "एक त्रुटि हुई। कृपया फिर से प्रयास करें।",
@@ -1029,6 +1031,8 @@
     "remember_password": "अपना पासवर्ड याद है?",
     "continue_with_github": "GitHub के साथ जारी रखें",
     "continue_with_google": "Google के साथ जारी रखें",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "या ईमेल के साथ जारी रखें",
     "sending": "भेजा जा रहा है...",
     "sending_ellipsis": "भेजा जा रहा है…",

@@ -85,6 +85,8 @@
     "no_account": "Belum punya akun?",
     "continue_with_github": "Lanjutkan dengan GitHub",
     "continue_with_google": "Lanjutkan dengan Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Atau lanjutkan dengan email",
     "invalid_credentials": "Email atau kata sandi tidak valid",
     "generic_error": "Terjadi kesalahan. Silakan coba lagi.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Ingat kata sandi Anda?",
     "continue_with_github": "Lanjutkan dengan GitHub",
     "continue_with_google": "Lanjutkan dengan Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Atau lanjutkan dengan email",
     "sending": "Mengirim...",
     "sending_ellipsis": "Mengirim…",

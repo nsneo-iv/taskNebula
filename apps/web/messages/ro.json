@@ -85,6 +85,8 @@
     "no_account": "Nu ai un cont?",
     "continue_with_github": "Continuă cu GitHub",
     "continue_with_google": "Continuă cu Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Sau continuă cu e-mail",
     "invalid_credentials": "E-mail sau parolă invalide",
     "generic_error": "A apărut o eroare. Te rugăm să încerci din nou.",
@@ -1062,6 +1064,8 @@
     "remember_password": "Îți amintești parola?",
     "continue_with_github": "Continuă cu GitHub",
     "continue_with_google": "Continuă cu Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Sau continuă cu e-mail",
     "sending": "Se trimite...",
     "sending_ellipsis": "Se trimite…",

@@ -3,6 +3,7 @@ import type { NextAuthConfig } from 'next-auth';
 import Credentials from 'next-auth/providers/credentials';
 import GitHub from 'next-auth/providers/github';
 import Google from 'next-auth/providers/google';
+import { OidcProvider } from '@/lib/auth/oidc-provider';
 import { db, users } from '@tasknebula/db';
 import { eq } from 'drizzle-orm';
 import bcrypt from 'bcryptjs';
@@ -149,6 +150,18 @@ async function buildNodeProviders(): Promise<NextAuthConfig['providers']> {
       Google({
         clientId: credentials.google.clientId,
         clientSecret: credentials.google.clientSecret,
+      })
+    );
+  }
+
+  const oidcCredentials = credentials.oidc;
+  if (oidcCredentials && 'issuer' in oidcCredentials) {
+    providers.push(
+      OidcProvider({
+        issuer: oidcCredentials.issuer,
+        clientId: oidcCredentials.clientId,
+        clientSecret: oidcCredentials.clientSecret,
+        name: oidcCredentials.name ?? 'SSO',
       })
     );
   }

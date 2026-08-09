@@ -85,6 +85,8 @@
     "no_account": "Heb je nog geen account?",
     "continue_with_github": "Doorgaan met GitHub",
     "continue_with_google": "Doorgaan met Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Of ga verder met e-mail",
     "invalid_credentials": "Ongeldig e-mailadres of wachtwoord",
     "generic_error": "Er is een fout opgetreden. Probeer het opnieuw.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Weet je je wachtwoord weer?",
     "continue_with_github": "Doorgaan met GitHub",
     "continue_with_google": "Doorgaan met Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Of ga verder met e-mail",
     "sending": "Versturen...",
     "sending_ellipsis": "Versturen…",

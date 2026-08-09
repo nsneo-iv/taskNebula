@@ -55,6 +55,7 @@ export function SignUpForm() {
   const [oauthProviders, setOauthProviders] = useState<OAuthProviderAvailability>(
     EMPTY_OAUTH_PROVIDER_AVAILABILITY
   );
+  const [oidcName, setOidcName] = useState<string | null>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -80,6 +81,9 @@ export function SignUpForm() {
         if (!mounted) return;
 
         setOauthProviders(normalizeOAuthProviderAvailability(providerData));
+        if (providerData?.oidcName) {
+          setOidcName(providerData.oidcName as string);
+        }
         setCheckingSetup(false);
       } catch {
         if (!mounted) return;
@@ -188,6 +192,7 @@ export function SignUpForm() {
           projectInviteToken={projectInviteToken}
           githubLabel={t('continue_with_github')}
           googleLabel={t('continue_with_google')}
+          oidcLabel={t('continue_with_oidc', { name: oidcName ?? 'SSO' })}
         />
       ) : null}
 

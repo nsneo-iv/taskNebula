@@ -85,6 +85,8 @@
     "no_account": "Har du inget konto?",
     "continue_with_github": "Fortsätt med GitHub",
     "continue_with_google": "Fortsätt med Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Eller fortsätt med e-post",
     "invalid_credentials": "Ogiltig e-postadress eller lösenord",
     "generic_error": "Ett fel uppstod. Försök igen.",
@@ -842,6 +844,8 @@
     "remember_password": "Kommer du ihåg ditt lösenord?",
     "continue_with_github": "Fortsätt med GitHub",
     "continue_with_google": "Fortsätt med Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Eller fortsätt med e-post",
     "sending": "Skickar...",
     "sending_ellipsis": "Skickar…",

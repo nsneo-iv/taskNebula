@@ -85,6 +85,8 @@
     "no_account": "還沒有帳號？",
     "continue_with_github": "使用 GitHub 繼續",
     "continue_with_google": "使用 Google 繼續",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用電子郵件繼續",
     "invalid_credentials": "電子郵件或密碼錯誤",
     "generic_error": "發生錯誤，請再試一次。",
@@ -1029,6 +1031,8 @@
     "remember_password": "想起密碼了嗎？",
     "continue_with_github": "使用 GitHub 繼續",
     "continue_with_google": "使用 Google 繼續",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用電子郵件繼續",
     "sending": "傳送中...",
     "sending_ellipsis": "傳送中…",

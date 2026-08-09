@@ -85,6 +85,8 @@
     "no_account": "ليس لديك حساب؟",
     "continue_with_github": "المتابعة باستخدام GitHub",
     "continue_with_google": "المتابعة باستخدام Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "أو المتابعة بالبريد الإلكتروني",
     "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
     "generic_error": "حدث خطأ. يُرجى المحاولة مرة أخرى.",
@@ -1029,6 +1031,8 @@
     "remember_password": "هل تتذكّر كلمة المرور؟",
     "continue_with_github": "المتابعة باستخدام GitHub",
     "continue_with_google": "المتابعة باستخدام Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "أو المتابعة بالبريد الإلكتروني",
     "sending": "جارٍ الإرسال...",
     "sending_ellipsis": "جارٍ الإرسال…",

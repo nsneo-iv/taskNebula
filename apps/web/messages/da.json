@@ -85,6 +85,8 @@
     "no_account": "Har du ikke en konto?",
     "continue_with_github": "Fortsæt med GitHub",
     "continue_with_google": "Fortsæt med Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Eller fortsæt med e-mail",
     "invalid_credentials": "Ugyldig e-mail eller adgangskode",
     "generic_error": "Der opstod en fejl. Prøv igen.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Kan du huske din adgangskode?",
     "continue_with_github": "Fortsæt med GitHub",
     "continue_with_google": "Fortsæt med Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Eller fortsæt med e-mail",
     "sending": "Sender ...",
     "sending_ellipsis": "Sender …",

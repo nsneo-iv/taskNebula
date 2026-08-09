@@ -4,7 +4,7 @@ import { NextRequest, NextResponse } from 'next/server';
 const TOKEN_TTL_MS = 60_000;
 const SEEN_NONCES = new Map<string, number>();
 
-export type MobileOAuthProvider = 'github' | 'google';
+export type MobileOAuthProvider = 'github' | 'google' | 'oidc';
 
 export type MobileOAuthExchangePayload = {
   v: 1;
@@ -108,7 +108,7 @@ export async function consumeMobileOAuthExchangeToken(
     payload.kind !== 'mobile-oauth-exchange' ||
     !payload.userId ||
     !payload.email ||
-    (payload.provider !== 'github' && payload.provider !== 'google') ||
+    (payload.provider !== 'github' && payload.provider !== 'google' && payload.provider !== 'oidc') ||
     !payload.nonce ||
     payload.exp < now
   ) {

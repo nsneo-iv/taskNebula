@@ -85,6 +85,8 @@
     "no_account": "Немає облікового запису?",
     "continue_with_github": "Продовжити з GitHub",
     "continue_with_google": "Продовжити з Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Або продовжити з електронною поштою",
     "invalid_credentials": "Неправильна електронна пошта або пароль",
     "generic_error": "Сталася помилка. Спробуйте ще раз.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Згадали пароль?",
     "continue_with_github": "Продовжити з GitHub",
     "continue_with_google": "Продовжити з Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Або продовжити з електронною поштою",
     "sending": "Надсилання...",
     "sending_ellipsis": "Надсилання…",

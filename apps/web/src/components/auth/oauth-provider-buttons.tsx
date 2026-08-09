@@ -2,20 +2,23 @@
 
 import { signIn } from 'next-auth/react';
 import { Button } from '@/components/ui/button';
+import { KeyRound } from 'lucide-react';
 import { Github } from 'lucide-react';
 
 export type OAuthProviderAvailability = {
   github: boolean;
   google: boolean;
+  oidc: boolean;
 };
 
 export const EMPTY_OAUTH_PROVIDER_AVAILABILITY: OAuthProviderAvailability = {
   github: false,
   google: false,
+  oidc: false,
 };
 
 export function hasOAuthProviders(providers: OAuthProviderAvailability) {
-  return providers.github || providers.google;
+  return providers.github || providers.google || providers.oidc;
 }
 
 export function normalizeOAuthProviderAvailability(value: unknown): OAuthProviderAvailability {
@@ -24,6 +27,7 @@ export function normalizeOAuthProviderAvailability(value: unknown): OAuthProvide
   return {
     github: raw?.github === true,
     google: raw?.google === true,
+    oidc: raw?.oidc === true,
   };
 }
 
@@ -33,12 +37,14 @@ export function OAuthProviderButtons({
   callbackUrl,
   githubLabel,
   googleLabel,
+  oidcLabel,
 }: {
   providers: OAuthProviderAvailability;
   projectInviteToken: string | null;
   callbackUrl?: string | null;
   githubLabel: string;
   googleLabel: string;
+  oidcLabel: string;
 }) {
   const postAuthUrl = getPostAuthUrl(projectInviteToken, callbackUrl ?? null);
 
@@ -66,6 +72,18 @@ export function OAuthProviderButtons({
         >
           <GoogleIcon className="me-2 h-4 w-4" />
           {googleLabel}
+        </Button>
+      ) : null}
+      {providers.oidc ? (
+        <Button
+          variant="outline"
+          onClick={() => signIn('oidc', { callbackUrl: postAuthUrl })}
+          type="button"
+          className="w-full text-sm"
+          size="xl"
+        >
+          <KeyRound className="me-2 h-4 w-4" aria-hidden="true" />
+          {oidcLabel}
         </Button>
       ) : null}
     </div>

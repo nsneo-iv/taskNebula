@@ -85,6 +85,8 @@
     "no_account": "Nemáte účet?",
     "continue_with_github": "Pokračovat přes GitHub",
     "continue_with_google": "Pokračovat přes Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Nebo pokračujte e-mailem",
     "invalid_credentials": "Neplatný e-mail nebo heslo",
     "generic_error": "Došlo k chybě. Zkuste to prosím znovu.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Vzpomínáte si na heslo?",
     "continue_with_github": "Pokračovat s GitHub",
     "continue_with_google": "Pokračovat s Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Nebo pokračujte e-mailem",
     "sending": "Odesílání...",
     "sending_ellipsis": "Odesílání…",

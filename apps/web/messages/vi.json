@@ -85,6 +85,8 @@
     "no_account": "Chưa có tài khoản?",
     "continue_with_github": "Tiếp tục với GitHub",
     "continue_with_google": "Tiếp tục với Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Hoặc tiếp tục bằng email",
     "invalid_credentials": "Email hoặc mật khẩu không hợp lệ",
     "generic_error": "Đã xảy ra lỗi. Vui lòng thử lại.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Nhớ mật khẩu của bạn?",
     "continue_with_github": "Tiếp tục với GitHub",
     "continue_with_google": "Tiếp tục với Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Hoặc tiếp tục bằng email",
     "sending": "Đang gửi...",
     "sending_ellipsis": "Đang gửi…",

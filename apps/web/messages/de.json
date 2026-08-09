@@ -85,6 +85,8 @@
     "no_account": "Noch kein Konto?",
     "continue_with_github": "Mit GitHub fortfahren",
     "continue_with_google": "Mit Google fortfahren",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Oder mit E-Mail fortfahren",
     "invalid_credentials": "Ungültige E-Mail oder Passwort",
     "generic_error": "Ein Fehler ist aufgetreten. Bitte erneut versuchen.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Erinnerst du dich an dein Passwort?",
     "continue_with_github": "Mit GitHub fortfahren",
     "continue_with_google": "Mit Google fortfahren",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Oder mit E-Mail fortfahren",
     "sending": "Wird gesendet...",
     "sending_ellipsis": "Wird gesendet…",

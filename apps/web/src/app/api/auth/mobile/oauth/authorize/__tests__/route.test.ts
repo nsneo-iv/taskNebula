@@ -8,7 +8,8 @@ const getLoginOAuthCredentialsMock = jest.fn();
 
 jest.mock('@/lib/auth/login-oauth-providers', () => ({
   getLoginOAuthCredentials: (...args: unknown[]) => getLoginOAuthCredentialsMock(...args),
-  isLoginOAuthProvider: (value: unknown) => value === 'github' || value === 'google',
+  isLoginOAuthProvider: (value: unknown) =>
+    value === 'github' || value === 'google' || value === 'oidc',
 }));
 
 import { GET } from '../route';
@@ -28,6 +29,7 @@ describe('/api/auth/mobile/oauth/authorize', () => {
         source: 'db',
       },
       google: null,
+      oidc: null,
     });
 
     const response = await GET(
@@ -52,6 +54,7 @@ describe('/api/auth/mobile/oauth/authorize', () => {
         source: 'db',
       },
       google: null,
+      oidc: null,
     });
 
     const response = await GET(
@@ -76,7 +79,7 @@ describe('/api/auth/mobile/oauth/authorize', () => {
       )
     ).resolves.toMatchObject({ status: 400 });
 
-    getLoginOAuthCredentialsMock.mockResolvedValue({ github: null, google: null });
+    getLoginOAuthCredentialsMock.mockResolvedValue({ github: null, google: null, oidc: null });
     await expect(
       GET(
         new NextRequest('https://tasks.example.com/api/auth/mobile/oauth/authorize?provider=google')

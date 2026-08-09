@@ -85,6 +85,8 @@
     "no_account": "还没有账户？",
     "continue_with_github": "使用 GitHub 继续",
     "continue_with_google": "使用 Google 继续",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用邮箱继续",
     "invalid_credentials": "邮箱或密码无效",
     "generic_error": "发生错误，请重试。",
@@ -842,6 +844,8 @@
     "remember_password": "想起密码了？",
     "continue_with_github": "使用 GitHub 继续",
     "continue_with_google": "使用 Google 继续",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用电子邮箱继续",
     "sending": "正在发送...",
     "sending_ellipsis": "正在发送…",

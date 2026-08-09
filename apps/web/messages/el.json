@@ -85,6 +85,8 @@
     "no_account": "Δεν έχετε λογαριασμό;",
     "continue_with_github": "Συνέχεια με GitHub",
     "continue_with_google": "Συνέχεια με Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ή συνεχίστε με email",
     "invalid_credentials": "Μη έγκυρο email ή κωδικός πρόσβασης",
     "generic_error": "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Θυμηθήκατε τον κωδικό σας;",
     "continue_with_github": "Συνέχεια με GitHub",
     "continue_with_google": "Συνέχεια με Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ή συνεχίστε με email",
     "sending": "Αποστολή...",
     "sending_ellipsis": "Αποστολή…",

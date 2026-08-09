@@ -85,6 +85,8 @@
     "no_account": "アカウントをお持ちでないですか？",
     "continue_with_github": "GitHub で続行",
     "continue_with_google": "Google で続行",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "またはメールで続行",
     "invalid_credentials": "メールアドレスまたはパスワードが正しくありません",
     "generic_error": "エラーが発生しました。もう一度お試しください。",
@@ -1029,6 +1031,8 @@
     "remember_password": "パスワードを思い出しましたか？",
     "continue_with_github": "GitHub で続行",
     "continue_with_google": "Google で続行",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "またはメールで続行",
     "sending": "送信中...",
     "sending_ellipsis": "送信中…",

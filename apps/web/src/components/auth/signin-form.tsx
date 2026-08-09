@@ -111,6 +111,7 @@ export function SignInForm() {
     EMPTY_OAUTH_PROVIDER_AVAILABILITY
   );
   const [adEnabled, setAdEnabled] = useState(false);
+  const [oidcName, setOidcName] = useState<string | null>(null);
 
   const statusBanner = useMemo(() => resolveStatusBanner(searchParams), [searchParams]);
   const projectInviteToken = searchParams?.get('projectInviteToken') || null;
@@ -143,6 +144,9 @@ export function SignInForm() {
         if (!mounted) return;
 
         setOauthProviders(normalizeOAuthProviderAvailability(providerData));
+        if (providerData?.oidcName) {
+          setOidcName(providerData.oidcName as string);
+        }
         if (providerData?.ad === true) {
           setAdEnabled(true);
         }
@@ -226,6 +230,7 @@ export function SignInForm() {
           callbackUrl={callbackUrl}
           githubLabel={tAuth('continue_with_github')}
           googleLabel={tAuth('continue_with_google')}
+          oidcLabel={tAuth('continue_with_oidc', { name: oidcName ?? 'SSO' })}
         />
       ) : null}
 

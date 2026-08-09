@@ -85,6 +85,8 @@
     "no_account": "Нет аккаунта?",
     "continue_with_github": "Продолжить с GitHub",
     "continue_with_google": "Продолжить с Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продолжить с помощью электронной почты",
     "invalid_credentials": "Неверный адрес электронной почты или пароль",
     "generic_error": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Вспомнили пароль?",
     "continue_with_github": "Продолжить с GitHub",
     "continue_with_google": "Продолжить с Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продолжить с помощью электронной почты",
     "sending": "Отправка...",
     "sending_ellipsis": "Отправка…",

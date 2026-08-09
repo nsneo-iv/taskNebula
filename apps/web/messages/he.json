@@ -85,6 +85,8 @@
     "no_account": "אין לכם חשבון?",
     "continue_with_github": "המשך עם GitHub",
     "continue_with_google": "המשך עם Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "או המשיכו עם אימייל",
     "invalid_credentials": "אימייל או סיסמה שגויים",
     "generic_error": "אירעה שגיאה. נסו שוב.",
@@ -1029,6 +1031,8 @@
     "remember_password": "זוכרים את הסיסמה שלכם?",
     "continue_with_github": "המשך עם GitHub",
     "continue_with_google": "המשך עם Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "או המשיכו עם אימייל",
     "sending": "שולח...",
     "sending_ellipsis": "שולח…",

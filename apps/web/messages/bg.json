@@ -85,6 +85,8 @@
     "no_account": "Нямате акаунт?",
     "continue_with_github": "Продължи с GitHub",
     "continue_with_google": "Продължи с Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продължи с имейл",
     "invalid_credentials": "Невалиден имейл или парола",
     "generic_error": "Възникна грешка. Моля, опитайте отново.",
@@ -1029,6 +1031,8 @@
     "remember_password": "Спомняте ли си паролата си?",
     "continue_with_github": "Продължи с GitHub",
     "continue_with_google": "Продължи с Google",
+
+    "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продължи с имейл",
     "sending": "Изпращане...",
     "sending_ellipsis": "Изпращане…",
