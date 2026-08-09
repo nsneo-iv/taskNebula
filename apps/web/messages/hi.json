@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "गलत ईमेल या पासवर्ड।",
     "banner_verification_invalid": "वह सत्यापन लिंक अब मान्य नहीं है।",
     "banner_generic_signin_error": "साइन इन करते समय कुछ गलत हो गया।",
+    "ad_sign_in": "Windows AD से साइन इन करें",
+    "ad_sign_in_loading": "साइन इन हो रहा है…",
+    "ad_username_label": "डोमेन उपयोगकर्ता नाम",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "या अपने डोमेन खाते से जारी रखें",
     "loading": "लोड हो रहा है",
     "dismiss_notification": "सूचना खारिज करें"
   },

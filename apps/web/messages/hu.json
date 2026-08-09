@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Helytelen e-mail-cím vagy jelszó.",
     "banner_verification_invalid": "Ez a megerősítő hivatkozás már nem érvényes.",
     "banner_generic_signin_error": "Hiba történt a bejelentkezés során.",
+    "ad_sign_in": "Bejelentkezés Windows AD-vel",
+    "ad_sign_in_loading": "Bejelentkezés…",
+    "ad_username_label": "Tartományi felhasználónév",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Vagy folytassa a tartományi fiókjával",
     "loading": "Betöltés",
     "dismiss_notification": "Értesítés elvetése"
   },

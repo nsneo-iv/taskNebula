@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
     "banner_verification_invalid": "ลิงก์ยืนยันนี้ใช้ไม่ได้แล้ว",
     "banner_generic_signin_error": "เกิดข้อผิดพลาดขณะเข้าสู่ระบบ",
+    "ad_sign_in": "เข้าสู่ระบบด้วย Windows AD",
+    "ad_sign_in_loading": "กำลังเข้าสู่ระบบ…",
+    "ad_username_label": "ชื่อผู้ใช้โดเมน",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "หรือดำเนินการต่อด้วยบัญชีโดเมนของคุณ",
     "loading": "กำลังโหลด",
     "dismiss_notification": "ปิดการแจ้งเตือน"
   },

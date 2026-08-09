@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "E-mail ou mot de passe incorrect.",
     "banner_verification_invalid": "Ce lien de vérification n'est plus valide.",
     "banner_generic_signin_error": "Une erreur s'est produite lors de la connexion.",
+    "ad_sign_in": "Se connecter avec Windows AD",
+    "ad_sign_in_loading": "Connexion…",
+    "ad_username_label": "Nom d'utilisateur de domaine",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Ou connectez-vous avec votre compte de domaine",
     "loading": "Chargement",
     "dismiss_notification": "Ignorer la notification"
   },

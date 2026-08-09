@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Неправильна електронна пошта або пароль.",
     "banner_verification_invalid": "Це посилання для підтвердження більше недійсне.",
     "banner_generic_signin_error": "Під час входу сталася помилка.",
+    "ad_sign_in": "Увійти через Windows AD",
+    "ad_sign_in_loading": "Вхід…",
+    "ad_username_label": "Ім'я користувача домену",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Або продовжіть з обліковим записом домену",
     "loading": "Завантаження",
     "dismiss_notification": "Закрити сповіщення"
   },

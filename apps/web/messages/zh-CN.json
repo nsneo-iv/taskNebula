@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "邮箱或密码不正确。",
     "banner_verification_invalid": "该验证链接已失效。",
     "banner_generic_signin_error": "登录时出现问题。",
+    "ad_sign_in": "使用 Windows AD 登录",
+    "ad_sign_in_loading": "登录中…",
+    "ad_username_label": "域用户名",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "或继续使用你的域帐户",
     "loading": "加载中",
     "dismiss_notification": "关闭通知"
   },

@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "電子郵件或密碼錯誤。",
     "banner_verification_invalid": "該驗證連結已失效。",
     "banner_generic_signin_error": "登入時發生問題。",
+    "ad_sign_in": "使用 Windows AD 登入",
+    "ad_sign_in_loading": "登入中…",
+    "ad_username_label": "網域使用者名稱",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "或繼續使用您的網域帳戶",
     "loading": "載入中",
     "dismiss_notification": "關閉通知"
   },

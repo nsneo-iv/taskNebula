@@ -24,6 +24,8 @@ import {
   normalizeOAuthProviderAvailability,
   type OAuthProviderAvailability,
 } from './oauth-provider-buttons';
+import { ADSignInForm } from './ad-signin-form';
+import { acceptProjectInviteAfterSignIn, normalizeCallbackUrl } from './signin-utils';
 
 type BannerTone = 'success' | 'warn' | 'danger';
 
@@ -108,6 +110,7 @@ export function SignInForm() {
   const [oauthProviders, setOauthProviders] = useState<OAuthProviderAvailability>(
     EMPTY_OAUTH_PROVIDER_AVAILABILITY
   );
+  const [adEnabled, setAdEnabled] = useState(false);
 
   const statusBanner = useMemo(() => resolveStatusBanner(searchParams), [searchParams]);
   const projectInviteToken = searchParams?.get('projectInviteToken') || null;
@@ -140,6 +143,9 @@ export function SignInForm() {
         if (!mounted) return;
 
         setOauthProviders(normalizeOAuthProviderAvailability(providerData));
+        if (providerData?.ad === true) {
+          setAdEnabled(true);
+        }
         setCheckingSetup(false);
       } catch {
         if (!mounted) return;
@@ -223,6 +229,8 @@ export function SignInForm() {
         />
       ) : null}
 
+      {adEnabled ? <ADSignInForm dividerLabel={tAuth('ad_divider')} /> : null}
+
       {hasOAuth ? <AuthDivider>{tAuth('or_continue_with_email')}</AuthDivider> : null}
 
       <form onSubmit={handleSubmit} className="space-y-5">
@@ -294,28 +302,4 @@ export function SignInForm() {
       </p>
     </div>
   );
-}
-
-function normalizeCallbackUrl(value: string | null | undefined) {
-  if (!value || !value.startsWith('/') || value.startsWith('//')) return null;
-  if (value.startsWith('/auth/') || value === '/auth') return null;
-  return value;
-}
-
-async function acceptProjectInviteAfterSignIn(
-  projectInviteToken: string | null,
-  callbackUrl: string | null
-) {
-  if (!projectInviteToken) return callbackUrl || '/dashboard';
-
-  const response = await fetch('/api/project-invite-links/accept', {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ projectInviteToken }),
-  });
-
-  if (!response.ok) return '/dashboard';
-
-  const data = (await response.json().catch(() => ({}))) as { redirectTo?: string };
-  return data.redirectTo || '/dashboard';
 }

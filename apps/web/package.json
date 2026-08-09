@@ -88,6 +88,7 @@
     "ioredis": "^5.10.1",
     "jose": "^5.10.0",
     "langfuse": "^3.38.0",
+    "ldapts": "8.2.0",
     "livekit-client": "^2.18.1",
     "livekit-server-sdk": "^2.15.0",
     "lowlight": "^3.1.0",

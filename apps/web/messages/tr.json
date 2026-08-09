@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "E-posta veya parola hatalı.",
     "banner_verification_invalid": "Doğrulama bağlantısı artık geçerli değil.",
     "banner_generic_signin_error": "Giriş sırasında bir şeyler ters gitti.",
+    "ad_sign_in": "Windows AD ile oturum aç",
+    "ad_sign_in_loading": "Oturum açılıyor…",
+    "ad_username_label": "Etki alanı kullanıcı adı",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Ya da domain hesabınızla devam edin",
     "loading": "Yükleniyor",
     "dismiss_notification": "Bildirimi kapat"
   },

@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Email hoặc mật khẩu không chính xác.",
     "banner_verification_invalid": "Liên kết xác minh đó không còn hợp lệ.",
     "banner_generic_signin_error": "Đã xảy ra sự cố khi đăng nhập.",
+    "ad_sign_in": "Đăng nhập bằng Windows AD",
+    "ad_sign_in_loading": "Đang đăng nhập…",
+    "ad_username_label": "Tên người dùng miền",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Hoặc tiếp tục bằng tài khoản miền của bạn",
     "loading": "Đang tải",
     "dismiss_notification": "Bỏ qua thông báo"
   },

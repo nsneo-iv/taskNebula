@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة.",
     "banner_verification_invalid": "رابط التحقق هذا لم يعد صالحًا.",
     "banner_generic_signin_error": "حدث خطأ ما أثناء تسجيل الدخول.",
+    "ad_sign_in": "تسجيل الدخول عبر Active Directory",
+    "ad_sign_in_loading": "جارٍ تسجيل الدخول…",
+    "ad_username_label": "اسم مستخدم المجال",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "أو تابع باستخدام حسابك في المجال",
     "loading": "جارٍ التحميل",
     "dismiss_notification": "تجاهل الإشعار"
   },

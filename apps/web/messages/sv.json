@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Felaktig e-postadress eller lösenord.",
     "banner_verification_invalid": "Den verifieringslänken är inte längre giltig.",
     "banner_generic_signin_error": "Något gick fel vid inloggningen.",
+    "ad_sign_in": "Logga in med Windows AD",
+    "ad_sign_in_loading": "Loggar in…",
+    "ad_username_label": "Domänanvändarnamn",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Eller fortsätt med ditt domänkonto",
     "loading": "Laddar",
     "dismiss_notification": "Stäng avisering"
   },

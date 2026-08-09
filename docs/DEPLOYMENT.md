@@ -62,6 +62,16 @@ EMAIL_FROM=noreply@yourdomain.com
 # Caching
 REDIS_URL=redis://localhost:6379
 
+# Windows AD / LDAP sign-in (see .env.example for the full list)
+AD_LDAP_URL=ldap://dc.corp.example.com:389
+AD_LDAP_SEARCH_BASE=DC=corp,DC=example,DC=com
+# AD_ENABLED=false           # explicit disable
+# AD_LDAP_BIND_DN=...
+# AD_LDAP_BIND_PASSWORD=...
+# AD_LDAP_REQUIRED_GROUP=...
+# AD_EMAIL_DOMAIN=corp.example.com
+# AD_AUTO_PROVISION=true
+
 # Self-hosted voice rooms
 LIVEKIT_URL=http://host.docker.internal:7880
 LIVEKIT_PUBLIC_HOST=rtc.yourdomain.com

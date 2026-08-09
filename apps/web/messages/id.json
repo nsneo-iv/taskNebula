@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Email atau kata sandi salah.",
     "banner_verification_invalid": "Tautan verifikasi itu sudah tidak berlaku.",
     "banner_generic_signin_error": "Terjadi kesalahan saat masuk.",
+    "ad_sign_in": "Masuk dengan Windows AD",
+    "ad_sign_in_loading": "Sedang masuk…",
+    "ad_username_label": "Nama pengguna domain",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Atau lanjutkan dengan akun domain Anda",
     "loading": "Memuat",
     "dismiss_notification": "Tutup notifikasi"
   },

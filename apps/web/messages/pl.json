@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Nieprawidłowy adres e-mail lub hasło.",
     "banner_verification_invalid": "Ten link weryfikacyjny jest już nieważny.",
     "banner_generic_signin_error": "Coś poszło nie tak podczas logowania.",
+    "ad_sign_in": "Zaloguj się przez Windows AD",
+    "ad_sign_in_loading": "Logowanie…",
+    "ad_username_label": "Nazwa użytkownika domeny",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Lub przejdź dalej kontem domenowym",
     "loading": "Ładowanie",
     "dismiss_notification": "Zamknij powiadomienie"
   },

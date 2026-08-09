@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Virheellinen sähköposti tai salasana.",
     "banner_verification_invalid": "Vahvistuslinkki ei ole enää voimassa.",
     "banner_generic_signin_error": "Sisäänkirjautumisessa tapahtui virhe.",
+    "ad_sign_in": "Kirjaudu Windows AD -tilillä",
+    "ad_sign_in_loading": "Kirjaudutaan…",
+    "ad_username_label": "Verkkoalueen käyttäjänimi",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Tai jatka verkkoalueen tilillä",
     "loading": "Ladataan",
     "dismiss_notification": "Hylkää ilmoitus"
   },

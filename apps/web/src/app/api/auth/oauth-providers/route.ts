@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { getLoginOAuthAvailability } from '@/lib/auth/login-oauth-providers';
+import { isAdAuthEnabled } from '@/lib/auth/ad-auth';
 
 export const dynamic = 'force-dynamic';
 
@@ -13,7 +14,7 @@ export async function GET() {
   }
 
   return NextResponse.json(
-    { providers },
+    { providers, ad: isAdAuthEnabled() },
     {
       headers: {
         'Cache-Control': 'no-store',

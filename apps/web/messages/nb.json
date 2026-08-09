@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Feil e-post eller passord.",
     "banner_verification_invalid": "Den bekreftelseslenken er ikke lenger gyldig.",
     "banner_generic_signin_error": "Noe gikk galt under innlogging.",
+    "ad_sign_in": "Logg inn med Windows AD",
+    "ad_sign_in_loading": "Logger inn…",
+    "ad_username_label": "Domenebrukernavn",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Eller fortsett med domene kontoen din",
     "loading": "Laster",
     "dismiss_notification": "Lukk varsel"
   },

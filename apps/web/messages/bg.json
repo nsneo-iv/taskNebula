@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Неправилен имейл или парола.",
     "banner_verification_invalid": "Този линк за потвърждение вече не е валиден.",
     "banner_generic_signin_error": "Нещо се обърка при влизането.",
+    "ad_sign_in": "Вход с Active Directory",
+    "ad_sign_in_loading": "Вход…",
+    "ad_username_label": "Потребителско име на домейна",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Или продължете с акаунт от домейна",
     "loading": "Зареждане",
     "dismiss_notification": "Отхвърляне на известието"
   },

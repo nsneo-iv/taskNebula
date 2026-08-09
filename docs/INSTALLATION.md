@@ -73,6 +73,43 @@ Open **http://localhost:3000** in your browser.
    AUTH_GOOGLE_SECRET=your-client-secret
    ```
 
+### Windows AD / LDAP Sign-in
+
+Enables the "Sign in with Windows AD" block on the login page. Requires a
+domain controller URL and a search base; set `AD_ENABLED=false` to disable
+explicitly even when both are present.
+
+```env
+AD_ENABLED=true
+AD_LDAP_URL=ldap://dc.corp.example.com:389    # or ldaps://...
+AD_LDAP_SEARCH_BASE=DC=corp,DC=example,DC=com
+
+# Optional: service account for the directory lookup (otherwise anonymous)
+# AD_LDAP_BIND_DN=CN=svc-tasknebula,OU=Service Accounts,DC=corp,DC=example,DC=com
+# AD_LDAP_BIND_PASSWORD=svc-password
+
+# Optional: restrict to a group configured via memberOf
+# AD_LDAP_REQUIRED_GROUP=CN=TaskNebula Users,OU=Groups,DC=corp,DC=example,DC=com
+
+# Optional: domain used to build the email when an entry has no mail attribute
+# AD_EMAIL_DOMAIN=corp.example.com
+
+# Optional: disable auto-creating a TaskNebula account on first login
+# AD_AUTO_PROVISION=true
+```
+
+Notes:
+
+- Username can be a `sAMAccountName` or a full UPN (`user@corp.example.com`).
+- Passwords are verified by LDAP-binding as the user's DN — never stored.
+- The default lookup filter is
+  `(&(objectClass=user)(|(sAMAccountName={{username}})(userPrincipalName={{username}})))`;
+  override with `AD_LDAP_USER_FILTER` (the `{{username}}` token is escaped).
+- Like the email-password provider, the AD provider's `authorize` hook links
+  the directory account via the `accounts` table (`provider = 'ad'`, keyed by
+  the entry DN), provisioning a TaskNebula user on first login when
+  `AD_AUTO_PROVISION` is on.
+
 ---
 
 ## AI Features (Optional)

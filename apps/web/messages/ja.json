@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "メールアドレスまたはパスワードが正しくありません。",
     "banner_verification_invalid": "この確認リンクは無効になっています。",
     "banner_generic_signin_error": "サインイン中に問題が発生しました。",
+    "ad_sign_in": "Windows AD でサインイン",
+    "ad_sign_in_loading": "サインイン中…",
+    "ad_username_label": "ドメインのユーザー名",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "または、ドメインアカウントで続行します",
     "loading": "読み込み中",
     "dismiss_notification": "通知を閉じる"
   },

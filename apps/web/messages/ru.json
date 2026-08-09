@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Неверный адрес электронной почты или пароль.",
     "banner_verification_invalid": "Эта ссылка для подтверждения больше недействительна.",
     "banner_generic_signin_error": "При входе что-то пошло не так.",
+    "ad_sign_in": "Войти через Windows AD",
+    "ad_sign_in_loading": "Вход…",
+    "ad_username_label": "Имя пользователя домена",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Или войдите с корпоративной учётной записью",
     "loading": "Загрузка",
     "dismiss_notification": "Закрыть уведомление"
   },

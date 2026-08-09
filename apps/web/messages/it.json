@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Email o password errati.",
     "banner_verification_invalid": "Questo link di verifica non è più valido.",
     "banner_generic_signin_error": "Si è verificato un problema durante l'accesso.",
+    "ad_sign_in": "Accedi con Windows AD",
+    "ad_sign_in_loading": "Accesso in corso…",
+    "ad_username_label": "Nome utente di dominio",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Oppure accedi con l’unità di dominio",
     "loading": "Caricamento",
     "dismiss_notification": "Ignora notifica"
   },

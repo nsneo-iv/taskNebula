@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "Correo o contraseña incorrectos.",
     "banner_verification_invalid": "Ese enlace de verificación ya no es válido.",
     "banner_generic_signin_error": "Algo salió mal al iniciar sesión.",
+    "ad_sign_in": "Iniciar sesión con Windows AD",
+    "ad_sign_in_loading": "Iniciando sesión…",
+    "ad_username_label": "Nombre de usuario del dominio",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "O continúa con tu cuenta de dominio",
     "loading": "Cargando",
     "dismiss_notification": "Descartar notificación"
   },

@@ -11,6 +11,7 @@ import { consumeSamlExchangeToken } from '@/lib/sso/session';
 import { getLoginOAuthCredentials, isLoginOAuthProvider } from '@/lib/auth/login-oauth-providers';
 import { applyOAuthDatabaseUser, resolveOAuthDatabaseUser } from '@/lib/auth/oauth-users';
 import { consumeMobileOAuthExchangeToken } from '@/lib/auth/mobile-oauth';
+import { authenticateAdUser, resolveAdDatabaseUser } from '@/lib/auth/ad-auth';
 
 /**
  * Full auth configuration with database operations
@@ -97,6 +98,33 @@ function buildCredentialProviders(): NextAuthConfig['providers'] {
           email: user.email,
           name: user.name,
           image: user.image,
+        };
+      },
+    }),
+    // Windows Active Directory: verifies the credentials against the LDAP
+    // directory (see lib/auth/ad-auth.ts) and signs in / provisions the
+    // mapped TaskNebula account.
+    Credentials({
+      id: 'ad',
+      name: 'ad',
+      credentials: {
+        username: { label: 'Domain username', type: 'text' },
+        password: { label: 'Password', type: 'password' },
+      },
+      async authorize(credentials) {
+        const username = credentials?.username;
+        const password = credentials?.password;
+        if (typeof username !== 'string' || typeof password !== 'string') {
+          return null;
+        }
+        const identity = await authenticateAdUser(username, password);
+        if (!identity) return null;
+        const databaseUser = await resolveAdDatabaseUser(identity);
+        if (!databaseUser) return null;
+        return {
+          id: databaseUser.id,
+          email: databaseUser.email,
+          name: databaseUser.name,
         };
       },
     }),

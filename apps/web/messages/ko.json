@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "이메일 또는 비밀번호가 올바르지 않습니다.",
     "banner_verification_invalid": "해당 인증 링크는 더 이상 유효하지 않습니다.",
     "banner_generic_signin_error": "로그인 중 문제가 발생했습니다.",
+    "ad_sign_in": "Windows AD로 로그인",
+    "ad_sign_in_loading": "로그인 중…",
+    "ad_username_label": "도메인 사용자 이름",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "또는 도메인 계정으로 계속합니다",
     "loading": "불러오는 중",
     "dismiss_notification": "알림 닫기"
   },

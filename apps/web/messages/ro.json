@@ -93,6 +93,11 @@
     "banner_incorrect_credentials": "E-mail sau parolă incorecte.",
     "banner_verification_invalid": "Acel link de verificare nu mai este valid.",
     "banner_generic_signin_error": "Ceva nu a funcționat la autentificare.",
+    "ad_sign_in": "Autentificare cu Windows AD",
+    "ad_sign_in_loading": "Se autentifică…",
+    "ad_username_label": "Nume de utilizator al domeniului",
+    "ad_username_placeholder": "user@corp.example.com",
+    "ad_divider": "Sau continuați cu contul dumneavoastră de domeniu",
     "loading": "Se încarcă",
     "dismiss_notification": "Închide notificarea"
   },
