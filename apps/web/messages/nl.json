@@ -1923,6 +1923,42 @@
       "config_saved": "SSO-configuratie opgeslagen",
       "config_save_failed": "SSO-configuratie opslaan mislukt",
       "saml_heading": "SAML 2.0-identiteitsprovider",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configureer de OIDC-provider die je gebruikt voor aanmelding. De hier opgeslagen waarden gelden voor deze werkruimte.",
+
+      "instance_status_enabled": "Instantie-aanmelding: {name} beschikbaar (ingesteld via omgeving).",
+
+      "instance_status_disabled": "Instantie-aanmelding: OIDC uitgeschakeld.",
+
+      "instance_status_enabled_ad": "Instantie-aanmelding: Active Directory beschikbaar (ingesteld via omgeving).",
+
+      "oidc_name_label": "Weergavenaam",
+
+      "oidc_issuer_label": "Uitgever-URL",
+
+      "oidc_client_id_label": "Client-ID",
+
+      "oidc_client_secret_label": "Clientgeheim",
+
+      "instance_status_unavailable": "Instantie-aanmelding: niet beschikbaar.",
+
+      "secret_placeholder": "Huidige waarde behouden (leeg laten om het opgeslagen geheim te bewaren)",
+
+      "secret_required_placeholder": "Clientgeheim invoeren",
+
+      "ad_url_label": "LDAP-URL",
+
+      "ad_domain_label": "Domein",
+
+      "ad_bind_dn_label": "Bind-DN",
+
+      "ad_bind_password_label": "Bind-wachtwoord",
       "saml_metadata_prefix": "Metadata van de serviceprovider is beschikbaar op",
       "saml_metadata_suffix": "— deel dit met je IdP-beheerder. Upload de metadata-XML van de IdP hieronder om het formulier automatisch in te vullen.",
       "idp_metadata_label": "IdP-metadata-XML (plakken of uploaden)",

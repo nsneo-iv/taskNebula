@@ -1923,6 +1923,42 @@
       "config_saved": "SSO 구성이 저장되었습니다",
       "config_save_failed": "SSO 구성 저장에 실패했습니다",
       "saml_heading": "SAML 2.0 ID 제공자",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "로그인에 사용하는 OIDC 공급자를 구성합니다. 여기에 저장된 값은 이 워크스페이스에 적용됩니다.",
+
+      "instance_status_enabled": "인스턴스 로그인: {name} 사용 가능(환경에서 설정).",
+
+      "instance_status_disabled": "인스턴스 로그인: OIDC 비활성화됨.",
+
+      "instance_status_enabled_ad": "인스턴스 로그인: Active Directory 사용 가능(환경에서 설정).",
+
+      "oidc_name_label": "표시 이름",
+
+      "oidc_issuer_label": "발급자 URL",
+
+      "oidc_client_id_label": "클라이언트 ID",
+
+      "oidc_client_secret_label": "클라이언트 시크릿",
+
+      "instance_status_unavailable": "인스턴스 로그인: 사용할 수 없음.",
+
+      "secret_placeholder": "현재 값 유지(저장된 시크릿을 유지하려면 비워 두세요)",
+
+      "secret_required_placeholder": "클라이언트 시크릿 입력",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "도메인",
+
+      "ad_bind_dn_label": "바인드 DN",
+
+      "ad_bind_password_label": "바인드 암호",
       "saml_metadata_prefix": "서비스 제공자 메타데이터는 다음에 노출됩니다",
       "saml_metadata_suffix": "— IdP 관리자와 공유하세요. 아래에 IdP의 메타데이터 XML을 업로드하여 양식을 자동으로 채우세요.",
       "idp_metadata_label": "IdP 메타데이터 XML (붙여넣기 또는 업로드)",

@@ -1923,6 +1923,42 @@
       "config_saved": "Konfigurasi SSO disimpan",
       "config_save_failed": "Gagal menyimpan konfigurasi SSO",
       "saml_heading": "Penyedia Identitas SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Konfigurasikan penyedia OIDC yang Anda gunakan untuk masuk. Nilai yang disimpan di sini berlaku untuk ruang kerja ini.",
+
+      "instance_status_enabled": "Masuk instans: {name} tersedia (diatur melalui lingkungan).",
+
+      "instance_status_disabled": "Masuk instans: OIDC dinonaktifkan.",
+
+      "instance_status_enabled_ad": "Masuk instans: Active Directory tersedia (diatur melalui lingkungan).",
+
+      "oidc_name_label": "Nama tampilan",
+
+      "oidc_issuer_label": "URL penerbit",
+
+      "oidc_client_id_label": "ID klien",
+
+      "oidc_client_secret_label": "Rahasia klien",
+
+      "instance_status_unavailable": "Masuk instans: tidak tersedia.",
+
+      "secret_placeholder": "Pertahankan nilai saat ini (biarkan kosong untuk menyimpan rahasia)",
+
+      "secret_required_placeholder": "Masukkan rahasia klien",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Domain",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Kata sandi bind",
       "saml_metadata_prefix": "Metadata Penyedia Layanan diekspos di",
       "saml_metadata_suffix": "— bagikan dengan admin IdP Anda. Unggah XML metadata IdP di bawah untuk mengisi formulir secara otomatis.",
       "idp_metadata_label": "XML metadata IdP (tempel atau unggah)",

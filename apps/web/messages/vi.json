@@ -1923,6 +1923,42 @@
       "config_saved": "Đã lưu cấu hình SSO",
       "config_save_failed": "Lưu cấu hình SSO thất bại",
       "saml_heading": "Nhà cung cấp danh tính SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Định cấu hình nhà cung cấp OIDC bạn dùng để đăng nhập. Các giá trị lưu ở đây áp dụng cho không gian làm việc này.",
+
+      "instance_status_enabled": "Đăng nhập phiên bản: {name} khả dụng (đặt qua môi trường).",
+
+      "instance_status_disabled": "Đăng nhập phiên bản: OIDC bị tắt.",
+
+      "instance_status_enabled_ad": "Đăng nhập phiên bản: Active Directory khả dụng (đặt qua môi trường).",
+
+      "oidc_name_label": "Tên hiển thị",
+
+      "oidc_issuer_label": "URL nhà phát hành",
+
+      "oidc_client_id_label": "ID máy khách",
+
+      "oidc_client_secret_label": "Bí mật máy khách",
+
+      "instance_status_unavailable": "Đăng nhập phiên bản: không khả dụng.",
+
+      "secret_placeholder": "Giữ giá trị hiện tại (để trống để giữ bí mật đã lưu)",
+
+      "secret_required_placeholder": "Nhập bí mật máy khách",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Miền",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Mật khẩu ràng buộc",
       "saml_metadata_prefix": "Siêu dữ liệu của Nhà cung cấp dịch vụ được công bố tại",
       "saml_metadata_suffix": "— hãy chia sẻ nó với quản trị viên IdP của bạn. Tải lên XML siêu dữ liệu của IdP bên dưới để tự động điền biểu mẫu.",
       "idp_metadata_label": "XML siêu dữ liệu IdP (dán hoặc tải lên)",

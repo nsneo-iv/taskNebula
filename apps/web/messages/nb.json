@@ -1923,6 +1923,42 @@
       "config_saved": "SSO-konfigurasjon lagret",
       "config_save_failed": "Kunne ikke lagre SSO-konfigurasjon",
       "saml_heading": "SAML 2.0-identitetsleverandør",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Konfigurer OIDC-leverandøren du bruker for innlogging. Verdier lagret her gjelder for denne arbeidsplassen.",
+
+      "instance_status_enabled": "Instans-innlogging: {name} er tilgjengelig (satt via miljø).",
+
+      "instance_status_disabled": "Instans-innlogging: OIDC er deaktivert.",
+
+      "instance_status_enabled_ad": "Instans-innlogging: Active Directory er tilgjengelig (satt via miljø).",
+
+      "oidc_name_label": "Visningsnavn",
+
+      "oidc_issuer_label": "Utsteder-URL",
+
+      "oidc_client_id_label": "Klient-ID",
+
+      "oidc_client_secret_label": "Klienthemmelighet",
+
+      "instance_status_unavailable": "Instans-innlogging: ikke tilgjengelig.",
+
+      "secret_placeholder": "Behold gjeldende verdi (la stå tom for å beholde lagret hemmelighet)",
+
+      "secret_required_placeholder": "Skriv inn klienthemmeligheten",
+
+      "ad_url_label": "LDAP-URL",
+
+      "ad_domain_label": "Domene",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Bind-passord",
       "saml_metadata_prefix": "Metadata for tjenesteleverandøren er eksponert på",
       "saml_metadata_suffix": "— del det med IdP-administratoren din. Last opp IdP-ens metadata-XML nedenfor for å fylle ut skjemaet automatisk.",
       "idp_metadata_label": "IdP-metadata-XML (lim inn eller last opp)",

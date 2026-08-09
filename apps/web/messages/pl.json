@@ -1923,6 +1923,42 @@
       "config_saved": "Konfiguracja SSO zapisana",
       "config_save_failed": "Nie udało się zapisać konfiguracji SSO",
       "saml_heading": "Dostawca tożsamości SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Skonfiguruj dostawcę OIDC używanego do logowania. Wartości zapisane tutaj dotyczą tego obszaru roboczego.",
+
+      "instance_status_enabled": "Logowanie instancji: {name} dostępne (ustawione przez środowisko).",
+
+      "instance_status_disabled": "Logowanie instancji: OIDC wyłączone.",
+
+      "instance_status_enabled_ad": "Logowanie instancji: Active Directory dostępne (ustawione przez środowisko).",
+
+      "oidc_name_label": "Nazwa wyświetlana",
+
+      "oidc_issuer_label": "URL wystawcy",
+
+      "oidc_client_id_label": "ID klienta",
+
+      "oidc_client_secret_label": "Tajny klucz klienta",
+
+      "instance_status_unavailable": "Logowanie instancji: niedostępne.",
+
+      "secret_placeholder": "Zachowaj bieżącą wartość (pozostaw puste, aby zachować zapisany sekret)",
+
+      "secret_required_placeholder": "Wprowadź tajny klucz klienta",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Domena",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Hasło powiązania",
       "saml_metadata_prefix": "Metadane dostawcy usług są udostępniane pod adresem",
       "saml_metadata_suffix": "— udostępnij je administratorowi swojego IdP. Prześlij poniżej XML metadanych IdP, aby automatycznie wypełnić formularz.",
       "idp_metadata_label": "XML metadanych IdP (wklej lub prześlij)",

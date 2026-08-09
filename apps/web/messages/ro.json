@@ -2050,6 +2050,42 @@
       "config_saved": "Configurație SSO salvată",
       "config_save_failed": "Salvarea configurației SSO a eșuat",
       "saml_heading": "Furnizor de identitate SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configurează furnizorul OIDC folosit pentru autentificare. Valorile salvate aici se aplică acestui spațiu de lucru.",
+
+      "instance_status_enabled": "Autentificare instanță: {name} disponibil (setat prin mediu).",
+
+      "instance_status_disabled": "Autentificare instanță: OIDC dezactivat.",
+
+      "instance_status_enabled_ad": "Autentificare instanță: Active Directory disponibil (setat prin mediu).",
+
+      "oidc_name_label": "Nume afișat",
+
+      "oidc_issuer_label": "URL emitent",
+
+      "oidc_client_id_label": "ID client",
+
+      "oidc_client_secret_label": "Secret client",
+
+      "instance_status_unavailable": "Autentificare instanță: indisponibilă.",
+
+      "secret_placeholder": "Păstrează valoarea curentă (lasă gol pentru a păstra secretul salvat)",
+
+      "secret_required_placeholder": "Introdu secretul clientului",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Domeniu",
+
+      "ad_bind_dn_label": "DN de legare",
+
+      "ad_bind_password_label": "Parolă de legare",
       "saml_metadata_prefix": "Metadatele furnizorului de servicii sunt expuse la",
       "saml_metadata_suffix": "— partajează-le cu administratorul IdP-ului tău. Încarcă XML-ul de metadate al IdP-ului mai jos pentru a completa automat formularul.",
       "idp_metadata_label": "XML metadate IdP (lipește sau încarcă)",

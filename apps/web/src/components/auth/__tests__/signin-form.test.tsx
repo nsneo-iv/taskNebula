@@ -81,9 +81,9 @@ describe('SignInForm', () => {
     const user = userEvent.setup();
     render(<SignInForm />);
 
+    await user.click(await screen.findByRole('tab', { name: /sso/i }));
     const githubButton = await screen.findByRole('button', { name: /continue with github/i });
     expect(screen.queryByRole('button', { name: /continue with google/i })).not.toBeInTheDocument();
-    expect(screen.getByText(/or continue with email/i)).toBeInTheDocument();
 
     await user.click(githubButton);
 

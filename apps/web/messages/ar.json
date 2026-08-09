@@ -1923,6 +1923,42 @@
       "config_saved": "تم حفظ إعداد SSO",
       "config_save_failed": "فشل حفظ إعداد SSO",
       "saml_heading": "مزوّد هوية SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "قم بإعداد مزود OIDC الذي تستخدمه لتسجيل الدخول. تُحفظ القيم هنا لمساحة العمل هذه.",
+
+      "instance_status_enabled": "تسجيل الدخول في المثيل: {name} متاح (تم ضبطه عبر البيئة).",
+
+      "instance_status_disabled": "تسجيل الدخول في المثيل: OIDC معطّل.",
+
+      "instance_status_enabled_ad": "تسجيل الدخول في المثيل: Active Directory متاح (تم ضبطه عبر البيئة).",
+
+      "oidc_name_label": "اسم العرض",
+
+      "oidc_issuer_label": "رابط المُصدر",
+
+      "oidc_client_id_label": "معرّف العميل",
+
+      "oidc_client_secret_label": "سر العميل",
+
+      "instance_status_unavailable": "تسجيل الدخول في المثيل: غير متاح.",
+
+      "secret_placeholder": "احتفظ بالقيمة الحالية (اتركه فارغًا للاحتفاظ بالسر المحفوظ)",
+
+      "secret_required_placeholder": "أدخل سر العميل",
+
+      "ad_url_label": "رابط LDAP",
+
+      "ad_domain_label": "المجال",
+
+      "ad_bind_dn_label": "DN الربط",
+
+      "ad_bind_password_label": "كلمة مرور الربط",
       "saml_metadata_prefix": "بيانات تعريف مزوّد الخدمة متاحة في",
       "saml_metadata_suffix": "— شاركها مع مسؤول مزوّد الهوية لديك. ارفع XML بيانات تعريف مزوّد الهوية أدناه لملء النموذج تلقائيًا.",
       "idp_metadata_label": "XML بيانات تعريف مزوّد الهوية (الصق أو ارفع)",

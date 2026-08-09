@@ -1923,6 +1923,42 @@
       "config_saved": "SSO कॉन्फ़िगरेशन सहेजा गया",
       "config_save_failed": "SSO कॉन्फ़िगरेशन सहेजने में विफल",
       "saml_heading": "SAML 2.0 आइडेंटिटी प्रोवाइडर",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "साइन-इन के लिए उपयोग किए जाने वाले OIDC प्रदाता को कॉन्फ़िगर करें। यहाँ सहेजे गए मान इस कार्यस्थान पर लागू होते हैं।",
+
+      "instance_status_enabled": "इंस्टेंस साइन-इन: {name} उपलब्ध है (पर्यावरण से सेट)।",
+
+      "instance_status_disabled": "इंस्टेंस साइन-इन: OIDC अक्षम है।",
+
+      "instance_status_enabled_ad": "इंस्टेंस साइन-इन: Active Directory उपलब्ध है (पर्यावरण से सेट)।",
+
+      "oidc_name_label": "प्रदर्शन नाम",
+
+      "oidc_issuer_label": "जारीकर्ता URL",
+
+      "oidc_client_id_label": "क्लाइंट ID",
+
+      "oidc_client_secret_label": "क्लाइंट रहस्य",
+
+      "instance_status_unavailable": "इंस्टेंस साइन-इन: उपलब्ध नहीं।",
+
+      "secret_placeholder": "वर्तमान मान रखें (सहेजे गए रहस्य को रखने के लिए खाली छोड़ें)",
+
+      "secret_required_placeholder": "क्लाइंट रहस्य दर्ज करें",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "डोमेन",
+
+      "ad_bind_dn_label": "बाइंड DN",
+
+      "ad_bind_password_label": "बाइंड पासवर्ड",
       "saml_metadata_prefix": "सर्विस प्रोवाइडर मेटाडेटा यहाँ उजागर किया गया है",
       "saml_metadata_suffix": "— इसे अपने IdP एडमिन के साथ साझा करें। फ़ॉर्म को स्वतः भरने के लिए नीचे IdP का मेटाडेटा XML अपलोड करें।",
       "idp_metadata_label": "IdP मेटाडेटा XML (पेस्ट या अपलोड करें)",

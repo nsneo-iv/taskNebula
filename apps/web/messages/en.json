@@ -1923,6 +1923,42 @@
       "config_saved": "SSO configuration saved",
       "config_save_failed": "Failed to save SSO configuration",
       "saml_heading": "SAML 2.0 Identity Provider",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configure the OIDC provider you use for sign-in. Values saved here are stored for this workspace.",
+
+      "instance_status_enabled": "Instance sign-in: {name} is available (set via environment).",
+
+      "instance_status_disabled": "Instance sign-in: OIDC is disabled.",
+
+      "instance_status_enabled_ad": "Instance sign-in: Active Directory is available (set via environment).",
+
+      "oidc_name_label": "Display name",
+
+      "oidc_issuer_label": "Issuer URL",
+
+      "oidc_client_id_label": "Client ID",
+
+      "oidc_client_secret_label": "Client secret",
+
+      "instance_status_unavailable": "Instance sign-in: unavailable.",
+
+      "secret_placeholder": "Keep current value (leave blank to keep the saved secret)",
+
+      "secret_required_placeholder": "Enter the client secret",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "Domain",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Bind password",
       "saml_metadata_prefix": "Service Provider metadata is exposed at",
       "saml_metadata_suffix": "— share it with your IdP admin. Upload the IdP's metadata XML below to auto-fill the form.",
       "idp_metadata_label": "IdP metadata XML (paste or upload)",

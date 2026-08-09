@@ -1923,6 +1923,42 @@
       "config_saved": "SSO-konfiguráció mentve",
       "config_save_failed": "Nem sikerült menteni az SSO-konfigurációt",
       "saml_heading": "SAML 2.0 identitásszolgáltató",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Állítsd be a bejelentkezéshez használt OIDC-szolgáltatót. Az itt mentett értékek erre a munkaterületre vonatkoznak.",
+
+      "instance_status_enabled": "Példány-bejelentkezés: a(z) {name} elérhető (környezeten keresztül beállítva).",
+
+      "instance_status_disabled": "Példány-bejelentkezés: az OIDC le van tiltva.",
+
+      "instance_status_enabled_ad": "Példány-bejelentkezés: az Active Directory elérhető (környezeten keresztül beállítva).",
+
+      "oidc_name_label": "Megjelenített név",
+
+      "oidc_issuer_label": "Kibocsátó URL",
+
+      "oidc_client_id_label": "Ügyfélazonosító",
+
+      "oidc_client_secret_label": "Ügyféltitok",
+
+      "instance_status_unavailable": "Példány-bejelentkezés: nem érhető el.",
+
+      "secret_placeholder": "Aktuális érték megtartása (hagyd üresen a mentett titok megtartásához)",
+
+      "secret_required_placeholder": "Add meg az ügyféltitkot",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "Tartomány",
+
+      "ad_bind_dn_label": "Kötési DN",
+
+      "ad_bind_password_label": "Kötési jelszó",
       "saml_metadata_prefix": "A szolgáltató (SP) metaadatai itt érhetők el:",
       "saml_metadata_suffix": "– oszd meg az IdP-adminisztrátoroddal. Töltsd fel az IdP metaadat-XML-jét az űrlap automatikus kitöltéséhez.",
       "idp_metadata_label": "IdP metaadat-XML (beillesztés vagy feltöltés)",

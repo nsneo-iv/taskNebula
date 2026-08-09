@@ -1923,6 +1923,42 @@
       "config_saved": "SSO конфигурацията е запазена",
       "config_save_failed": "SSO конфигурацията не можа да бъде запазена",
       "saml_heading": "SAML 2.0 доставчик на идентичност",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Конфигурирайте OIDC доставчика, който използвате за влизане. Стойностите тук се съхраняват за това работно пространство.",
+
+      "instance_status_enabled": "Влизане в инстанцията: {name} е наличен (зададен чрез средата).",
+
+      "instance_status_disabled": "Влизане в инстанцията: OIDC е изключен.",
+
+      "instance_status_enabled_ad": "Влизане в инстанцията: Active Directory е наличен (зададен чрез средата).",
+
+      "oidc_name_label": "Име за показване",
+
+      "oidc_issuer_label": "URL на издателя",
+
+      "oidc_client_id_label": "Идентификатор на клиент",
+
+      "oidc_client_secret_label": "Клиентска тайна",
+
+      "instance_status_unavailable": "Влизане в инстанцията: недостъпно.",
+
+      "secret_placeholder": "Запазване на текущата стойност (оставете празно, за да запазите тайната)",
+
+      "secret_required_placeholder": "Въведете клиентската тайна",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "Домейн",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Парола за свързване",
       "saml_metadata_prefix": "Метаданните на доставчика на услуги са изложени на",
       "saml_metadata_suffix": "— споделете ги с администратора на вашия IdP. Качете XML с метаданните на IdP по-долу, за да попълните формуляра автоматично.",
       "idp_metadata_label": "XML с метаданни на IdP (поставете или качете)",

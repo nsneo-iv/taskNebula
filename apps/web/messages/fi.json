@@ -1923,6 +1923,42 @@
       "config_saved": "SSO-määritys tallennettu",
       "config_save_failed": "SSO-määrityksen tallennus epäonnistui",
       "saml_heading": "SAML 2.0 -identiteetintarjoaja",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Määritä kirjautumiseen käyttämäsi OIDC-palveluntarjoaja. Tähän tallennetut arvot koskevat tätä työtilaa.",
+
+      "instance_status_enabled": "Instanssin kirjautuminen: {name} on käytettävissä (asetettu ympäristön kautta).",
+
+      "instance_status_disabled": "Instanssin kirjautuminen: OIDC on poistettu käytöstä.",
+
+      "instance_status_enabled_ad": "Instanssin kirjautuminen: Active Directory on käytettävissä (asetettu ympäristön kautta).",
+
+      "oidc_name_label": "Näyttönimi",
+
+      "oidc_issuer_label": "Julkaisijan URL",
+
+      "oidc_client_id_label": "Asiakastunnus",
+
+      "oidc_client_secret_label": "Asiakassalaisuus",
+
+      "instance_status_unavailable": "Instanssin kirjautuminen: ei käytettävissä.",
+
+      "secret_placeholder": "Säilytä nykyinen arvo (jätä tyhjäksi säilyttääksesi tallennetun salaisuuden)",
+
+      "secret_required_placeholder": "Anna asiakassalaisuus",
+
+      "ad_url_label": "LDAP-URL",
+
+      "ad_domain_label": "Verkkotunnus",
+
+      "ad_bind_dn_label": "Sidonta-DN",
+
+      "ad_bind_password_label": "Sidontasalasana",
       "saml_metadata_prefix": "Palveluntarjoajan metatiedot ovat saatavilla osoitteessa",
       "saml_metadata_suffix": "— jaa se IdP-ylläpitäjällesi. Lataa IdP:n metatieto-XML alle täyttääksesi lomakkeen automaattisesti.",
       "idp_metadata_label": "IdP-metatieto-XML (liitä tai lataa)",

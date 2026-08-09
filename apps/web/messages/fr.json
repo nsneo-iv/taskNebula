@@ -1923,6 +1923,42 @@
       "config_saved": "Configuration SSO enregistrée",
       "config_save_failed": "Échec de l'enregistrement de la configuration SSO",
       "saml_heading": "Fournisseur d'identité SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configurez le fournisseur OIDC utilisé pour la connexion. Les valeurs enregistrées ici s’appliquent à cet espace de travail.",
+
+      "instance_status_enabled": "Connexion de l’instance : {name} disponible (défini via l’environnement).",
+
+      "instance_status_disabled": "Connexion de l’instance : OIDC désactivé.",
+
+      "instance_status_enabled_ad": "Connexion de l’instance : Active Directory disponible (défini via l’environnement).",
+
+      "oidc_name_label": "Nom affiché",
+
+      "oidc_issuer_label": "URL de l’émetteur",
+
+      "oidc_client_id_label": "Identifiant client",
+
+      "oidc_client_secret_label": "Secret client",
+
+      "instance_status_unavailable": "Connexion de l’instance : indisponible.",
+
+      "secret_placeholder": "Conserver la valeur actuelle (laisser vide pour garder le secret enregistré)",
+
+      "secret_required_placeholder": "Saisir le secret client",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Domaine",
+
+      "ad_bind_dn_label": "DN de liaison",
+
+      "ad_bind_password_label": "Mot de passe de liaison",
       "saml_metadata_prefix": "Les métadonnées du fournisseur de services sont exposées à",
       "saml_metadata_suffix": "— partagez-les avec votre administrateur IdP. Téléversez le XML de métadonnées de l'IdP ci-dessous pour remplir automatiquement le formulaire.",
       "idp_metadata_label": "XML de métadonnées IdP (coller ou téléverser)",

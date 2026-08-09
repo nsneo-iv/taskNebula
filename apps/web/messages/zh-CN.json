@@ -1923,6 +1923,42 @@
       "config_saved": "SSO 配置已保存",
       "config_save_failed": "保存 SSO 配置失败",
       "saml_heading": "SAML 2.0 身份提供商",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "配置用于登录的 OIDC 提供方。此处保存的值适用于此工作区。",
+
+      "instance_status_enabled": "实例登录：{name} 可用（通过环境设置）。",
+
+      "instance_status_disabled": "实例登录：OIDC 已禁用。",
+
+      "instance_status_enabled_ad": "实例登录：Active Directory 可用（通过环境设置）。",
+
+      "oidc_name_label": "显示名称",
+
+      "oidc_issuer_label": "颁发者 URL",
+
+      "oidc_client_id_label": "客户端 ID",
+
+      "oidc_client_secret_label": "客户端密钥",
+
+      "instance_status_unavailable": "实例登录：不可用。",
+
+      "secret_placeholder": "保留当前值（留空以保留已保存的密钥）",
+
+      "secret_required_placeholder": "输入客户端密钥",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "域",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "绑定密码",
       "saml_metadata_prefix": "服务提供商元数据公开于",
       "saml_metadata_suffix": "— 请将其分享给你的 IdP 管理员。在下方上传 IdP 的元数据 XML 以自动填充表单。",
       "idp_metadata_label": "IdP 元数据 XML（粘贴或上传）",

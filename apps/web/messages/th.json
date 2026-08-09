@@ -1923,6 +1923,42 @@
       "config_saved": "บันทึกการกำหนดค่า SSO แล้ว",
       "config_save_failed": "บันทึกการกำหนดค่า SSO ไม่สำเร็จ",
       "saml_heading": "ผู้ให้บริการระบุตัวตน SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "กำหนดค่าผู้ให้บริการ OIDC ที่ใช้สำหรับการเข้าสู่ระบบ ค่าที่บันทึกไว้ที่นี่ใช้กับพื้นที่ทำงานนี้",
+
+      "instance_status_enabled": "การเข้าสู่ระบบอินสแตนซ์: {name} พร้อมใช้งาน (ตั้งค่าผ่านสภาพแวดล้อม)",
+
+      "instance_status_disabled": "การเข้าสู่ระบบอินสแตนซ์: OIDC ถูกปิดใช้งาน",
+
+      "instance_status_enabled_ad": "การเข้าสู่ระบบอินสแตนซ์: Active Directory พร้อมใช้งาน (ตั้งค่าผ่านสภาพแวดล้อม)",
+
+      "oidc_name_label": "ชื่อที่แสดง",
+
+      "oidc_issuer_label": "URL ผู้ออก",
+
+      "oidc_client_id_label": "รหัสไคลเอ็นต์",
+
+      "oidc_client_secret_label": "ความลับของไคลเอ็นต์",
+
+      "instance_status_unavailable": "การเข้าสู่ระบบอินสแตนซ์: ไม่พร้อมใช้งาน",
+
+      "secret_placeholder": "เก็บค่าปัจจุบันไว้ (เว้นว่างเพื่อเก็บความลับที่บันทึกไว้)",
+
+      "secret_required_placeholder": "ป้อนความลับของไคลเอ็นต์",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "โดเมน",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "รหัสผ่านผูก",
       "saml_metadata_prefix": "เมตาดาทาของผู้ให้บริการเปิดเผยที่",
       "saml_metadata_suffix": "— แชร์กับผู้ดูแล IdP ของคุณ อัปโหลด XML เมตาดาทาของ IdP ด้านล่างเพื่อกรอกฟอร์มอัตโนมัติ",
       "idp_metadata_label": "XML เมตาดาทาของ IdP (วางหรืออัปโหลด)",

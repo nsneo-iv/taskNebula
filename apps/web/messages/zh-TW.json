@@ -1923,6 +1923,42 @@
       "config_saved": "SSO 設定已儲存",
       "config_save_failed": "儲存 SSO 設定失敗",
       "saml_heading": "SAML 2.0 身分提供者",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "設定用於登入的 OIDC 提供方。此處儲存的值適用於此工作區。",
+
+      "instance_status_enabled": "執行個體登入：{name} 可用（透過環境設定）。",
+
+      "instance_status_disabled": "執行個體登入：OIDC 已停用。",
+
+      "instance_status_enabled_ad": "執行個體登入：Active Directory 可用（透過環境設定）。",
+
+      "oidc_name_label": "顯示名稱",
+
+      "oidc_issuer_label": "簽發者 URL",
+
+      "oidc_client_id_label": "用戶端 ID",
+
+      "oidc_client_secret_label": "用戶端密鑰",
+
+      "instance_status_unavailable": "執行個體登入：無法使用。",
+
+      "secret_placeholder": "保留目前的值（留空以保留已儲存的密鑰）",
+
+      "secret_required_placeholder": "輸入用戶端密鑰",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "網域",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "綁定密碼",
       "saml_metadata_prefix": "服務提供者中繼資料公開於",
       "saml_metadata_suffix": "— 請與你的 IdP 管理員分享。在下方上傳 IdP 的中繼資料 XML 以自動填入表單。",
       "idp_metadata_label": "IdP 中繼資料 XML（貼上或上傳）",

@@ -1923,6 +1923,42 @@
       "config_saved": "Η διαμόρφωση SSO αποθηκεύτηκε",
       "config_save_failed": "Αποτυχία αποθήκευσης διαμόρφωσης SSO",
       "saml_heading": "Πάροχος ταυτότητας SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Διαμορφώστε τον πάροχο OIDC που χρησιμοποιείτε για σύνδεση. Οι τιμές που αποθηκεύονται εδώ ισχύουν για αυτόν τον χώρο εργασίας.",
+
+      "instance_status_enabled": "Σύνδεση παρουσίας: το {name} είναι διαθέσιμο (ορίστηκε μέσω περιβάλλοντος).",
+
+      "instance_status_disabled": "Σύνδεση παρουσίας: το OIDC είναι απενεργοποιημένο.",
+
+      "instance_status_enabled_ad": "Σύνδεση παρουσίας: το Active Directory είναι διαθέσιμο (ορίστηκε μέσω περιβάλλοντος).",
+
+      "oidc_name_label": "Όνομα εμφάνισης",
+
+      "oidc_issuer_label": "URL εκδότη",
+
+      "oidc_client_id_label": "Αναγνωριστικό πελάτη",
+
+      "oidc_client_secret_label": "Μυστικό πελάτη",
+
+      "instance_status_unavailable": "Σύνδεση παρουσίας: μη διαθέσιμη.",
+
+      "secret_placeholder": "Διατήρηση τρέχουσας τιμής (αφήστε κενό για να διατηρηθεί το αποθηκευμένο μυστικό)",
+
+      "secret_required_placeholder": "Εισάγετε το μυστικό πελάτη",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Τομέας",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Κωδικός σύνδεσης",
       "saml_metadata_prefix": "Τα μεταδεδομένα του Παρόχου Υπηρεσιών εκτίθενται στο",
       "saml_metadata_suffix": "— μοιραστείτε τα με τον διαχειριστή IdP σας. Μεταφορτώστε το XML μεταδεδομένων του IdP παρακάτω για αυτόματη συμπλήρωση της φόρμας.",
       "idp_metadata_label": "XML μεταδεδομένων IdP (επικόλληση ή μεταφόρτωση)",

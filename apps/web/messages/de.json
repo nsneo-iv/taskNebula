@@ -1923,6 +1923,42 @@
       "config_saved": "SSO-Konfiguration gespeichert",
       "config_save_failed": "SSO-Konfiguration konnte nicht gespeichert werden",
       "saml_heading": "SAML 2.0-Identitätsanbieter",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Konfigurieren Sie den OIDC-Anbieter für die Anmeldung. Die hier gespeicherten Werte gelten für diesen Arbeitsbereich.",
+
+      "instance_status_enabled": "Instanz-Anmeldung: {name} verfügbar (per Umgebung gesetzt).",
+
+      "instance_status_disabled": "Instanz-Anmeldung: OIDC deaktiviert.",
+
+      "instance_status_enabled_ad": "Instanz-Anmeldung: Active Directory verfügbar (per Umgebung gesetzt).",
+
+      "oidc_name_label": "Anzeigename",
+
+      "oidc_issuer_label": "Aussteller-URL",
+
+      "oidc_client_id_label": "Client-ID",
+
+      "oidc_client_secret_label": "Client-Geheimnis",
+
+      "instance_status_unavailable": "Instanz-Anmeldung: nicht verfügbar.",
+
+      "secret_placeholder": "Aktuellen Wert beibehalten (leer lassen, um das gespeicherte Geheimnis zu behalten)",
+
+      "secret_required_placeholder": "Client-Geheimnis eingeben",
+
+      "ad_url_label": "LDAP-URL",
+
+      "ad_domain_label": "Domäne",
+
+      "ad_bind_dn_label": "Bind-DN",
+
+      "ad_bind_password_label": "Bind-Passwort",
       "saml_metadata_prefix": "Die Service-Provider-Metadaten werden bereitgestellt unter",
       "saml_metadata_suffix": "— teile sie mit deinem IdP-Administrator. Lade die Metadaten-XML des IdP unten hoch, um das Formular automatisch auszufüllen.",
       "idp_metadata_label": "IdP-Metadaten-XML (einfügen oder hochladen)",

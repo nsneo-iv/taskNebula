@@ -1923,6 +1923,42 @@
       "config_saved": "Configurazione SSO salvata",
       "config_save_failed": "Impossibile salvare la configurazione SSO",
       "saml_heading": "Provider di identità SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configura il provider OIDC usato per l’accesso. I valori salvati qui valgono per questo spazio di lavoro.",
+
+      "instance_status_enabled": "Accesso istanza: {name} disponibile (impostato tramite ambiente).",
+
+      "instance_status_disabled": "Accesso istanza: OIDC disattivato.",
+
+      "instance_status_enabled_ad": "Accesso istanza: Active Directory disponibile (impostato tramite ambiente).",
+
+      "oidc_name_label": "Nome visualizzato",
+
+      "oidc_issuer_label": "URL emittente",
+
+      "oidc_client_id_label": "ID client",
+
+      "oidc_client_secret_label": "Segreto client",
+
+      "instance_status_unavailable": "Accesso istanza: non disponibile.",
+
+      "secret_placeholder": "Mantieni il valore corrente (lascia vuoto per conservare il segreto salvato)",
+
+      "secret_required_placeholder": "Inserisci il segreto client",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Dominio",
+
+      "ad_bind_dn_label": "DN di bind",
+
+      "ad_bind_password_label": "Password di bind",
       "saml_metadata_prefix": "I metadati del Service Provider sono esposti su",
       "saml_metadata_suffix": "— condividili con l'amministratore del tuo IdP. Carica l'XML dei metadati dell'IdP qui sotto per compilare automaticamente il modulo.",
       "idp_metadata_label": "XML dei metadati dell'IdP (incolla o carica)",

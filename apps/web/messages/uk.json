@@ -1923,6 +1923,42 @@
       "config_saved": "Конфігурацію SSO збережено",
       "config_save_failed": "Не вдалося зберегти конфігурацію SSO",
       "saml_heading": "Постачальник ідентифікації SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Налаштуйте OIDC-провайдера, який використовуєте для входу. Збережені тут значення застосовуються до цього робочого простору.",
+
+      "instance_status_enabled": "Вхід інстанса: {name} доступний (заданий через середовище).",
+
+      "instance_status_disabled": "Вхід інстанса: OIDC вимкнено.",
+
+      "instance_status_enabled_ad": "Вхід інстанса: Active Directory доступний (заданий через середовище).",
+
+      "oidc_name_label": "Показана назва",
+
+      "oidc_issuer_label": "URL видавця",
+
+      "oidc_client_id_label": "ID клієнта",
+
+      "oidc_client_secret_label": "Секрет клієнта",
+
+      "instance_status_unavailable": "Вхід інстанса: недоступний.",
+
+      "secret_placeholder": "Зберегти поточне значення (залиште порожнім, щоб зберегти наявний секрет)",
+
+      "secret_required_placeholder": "Введіть секрет клієнта",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Домен",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Пароль прив’язки",
       "saml_metadata_prefix": "Метадані постачальника послуг доступні за адресою",
       "saml_metadata_suffix": "— поділіться ними з адміністратором свого IdP. Завантажте XML метаданих IdP нижче для автозаповнення форми.",
       "idp_metadata_label": "XML метаданих IdP (вставте або завантажте)",

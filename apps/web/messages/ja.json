@@ -1923,6 +1923,42 @@
       "config_saved": "SSO 設定を保存しました",
       "config_save_failed": "SSO 設定の保存に失敗しました",
       "saml_heading": "SAML 2.0 アイデンティティプロバイダー",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "サインインに使用する OIDC プロバイダーを設定します。ここで保存した値はこのワークスペースに適用されます。",
+
+      "instance_status_enabled": "インスタンスのサインイン: {name} が利用可能です（環境で設定）。",
+
+      "instance_status_disabled": "インスタンスのサインイン: OIDC は無効です。",
+
+      "instance_status_enabled_ad": "インスタンスのサインイン: Active Directory が利用可能です（環境で設定）。",
+
+      "oidc_name_label": "表示名",
+
+      "oidc_issuer_label": "発行者 URL",
+
+      "oidc_client_id_label": "クライアント ID",
+
+      "oidc_client_secret_label": "クライアントシークレット",
+
+      "instance_status_unavailable": "インスタンスのサインイン: 利用できません。",
+
+      "secret_placeholder": "現在の値を保持（保存済みのシークレットを維持するには空のままにします）",
+
+      "secret_required_placeholder": "クライアントシークレットを入力",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "ドメイン",
+
+      "ad_bind_dn_label": "バインド DN",
+
+      "ad_bind_password_label": "バインドパスワード",
       "saml_metadata_prefix": "サービスプロバイダーのメタデータは次の場所で公開されています:",
       "saml_metadata_suffix": "— これを IdP 管理者と共有してください。以下に IdP のメタデータ XML をアップロードすると、フォームが自動入力されます。",
       "idp_metadata_label": "IdP メタデータ XML（貼り付けまたはアップロード）",

@@ -1923,6 +1923,42 @@
       "config_saved": "Конфигурация SSO сохранена",
       "config_save_failed": "Не удалось сохранить конфигурацию SSO",
       "saml_heading": "Поставщик идентификации SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Настройте OIDC-провайдера для входа. Сохранённые здесь значения применяются к этому рабочему пространству.",
+
+      "instance_status_enabled": "Вход инстанса: {name} доступен (задан через окружение).",
+
+      "instance_status_disabled": "Вход инстанса: OIDC отключён.",
+
+      "instance_status_enabled_ad": "Вход инстанса: Active Directory доступен (задан через окружение).",
+
+      "oidc_name_label": "Отображаемое имя",
+
+      "oidc_issuer_label": "URL издателя",
+
+      "oidc_client_id_label": "ID клиента",
+
+      "oidc_client_secret_label": "Секрет клиента",
+
+      "instance_status_unavailable": "Вход инстанса: недоступен.",
+
+      "secret_placeholder": "Сохранить текущее значение (оставьте пустым, чтобы сохранить прежний секрет)",
+
+      "secret_required_placeholder": "Введите секрет клиента",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Домен",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Пароль привязки",
       "saml_metadata_prefix": "Метаданные поставщика услуг доступны по адресу",
       "saml_metadata_suffix": "— передайте их администратору вашего IdP. Загрузите XML метаданных IdP ниже для автозаполнения формы.",
       "idp_metadata_label": "XML метаданных IdP (вставьте или загрузите)",

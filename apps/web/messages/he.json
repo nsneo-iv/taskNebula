@@ -1923,6 +1923,42 @@
       "config_saved": "תצורת ה-SSO נשמרה",
       "config_save_failed": "שמירת תצורת ה-SSO נכשלה",
       "saml_heading": "ספק זהויות SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "הגדר את ספק ה-OIDC שבו אתה משתמש לכניסה. הערכים שנשמרו כאן חלים על סביבת עבודה זו.",
+
+      "instance_status_enabled": "כניסת מופע: {name} זמין (הוגדר דרך הסביבה).",
+
+      "instance_status_disabled": "כניסת מופע: OIDC מושבת.",
+
+      "instance_status_enabled_ad": "כניסת מופע: Active Directory זמין (הוגדר דרך הסביבה).",
+
+      "oidc_name_label": "שם לתצוגה",
+
+      "oidc_issuer_label": "כתובת מנפיק",
+
+      "oidc_client_id_label": "מזהה לקוח",
+
+      "oidc_client_secret_label": "סוד לקוח",
+
+      "instance_status_unavailable": "כניסת מופע: לא זמינה.",
+
+      "secret_placeholder": "שמור את הערך הנוכחי (השאר ריק כדי לשמור את הסוד)",
+
+      "secret_required_placeholder": "הזן את סוד הלקוח",
+
+      "ad_url_label": "כתובת LDAP",
+
+      "ad_domain_label": "דומיין",
+
+      "ad_bind_dn_label": "DN קישור",
+
+      "ad_bind_password_label": "סיסמת קישור",
       "saml_metadata_prefix": "מטא-נתוני ספק השירות נחשפים בכתובת",
       "saml_metadata_suffix": "— שתפו אותם עם מנהל ה-IdP שלכם. העלו את ה-XML של מטא-נתוני ה-IdP למטה כדי למלא את הטופס אוטומטית.",
       "idp_metadata_label": "XML של מטא-נתוני IdP (הדביקו או העלו)",

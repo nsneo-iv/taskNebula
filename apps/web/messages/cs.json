@@ -1923,6 +1923,42 @@
       "config_saved": "Konfigurace SSO uložena",
       "config_save_failed": "Konfiguraci SSO se nepodařilo uložit",
       "saml_heading": "Poskytovatel identity SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Nakonfigurujte poskytovatele OIDC pro přihlašování. Uložené hodnoty platí pro tento pracovní prostor.",
+
+      "instance_status_enabled": "Přihlášení instance: {name} je k dispozici (nastaveno přes prostředí).",
+
+      "instance_status_disabled": "Přihlášení instance: OIDC je vypnuto.",
+
+      "instance_status_enabled_ad": "Přihlášení instance: Active Directory je k dispozici (nastaveno přes prostředí).",
+
+      "oidc_name_label": "Zobrazovaný název",
+
+      "oidc_issuer_label": "URL vydavatele",
+
+      "oidc_client_id_label": "ID klienta",
+
+      "oidc_client_secret_label": "Tajemství klienta",
+
+      "instance_status_unavailable": "Přihlášení instance: nedostupné.",
+
+      "secret_placeholder": "Zachovat aktuální hodnotu (nechte prázdné pro zachování uloženého tajemství)",
+
+      "secret_required_placeholder": "Zadejte tajemství klienta",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Doména",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Bind heslo",
       "saml_metadata_prefix": "Metadata poskytovatele služeb jsou dostupná na",
       "saml_metadata_suffix": "— sdílejte je se správcem vašeho IdP. Nahráním metadat XML vašeho IdP níže formulář automaticky vyplníte.",
       "idp_metadata_label": "Metadata IdP XML (vložit nebo nahrát)",

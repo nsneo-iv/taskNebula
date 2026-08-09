@@ -1923,6 +1923,42 @@
       "config_saved": "SSO yapılandırması kaydedildi",
       "config_save_failed": "SSO yapılandırması kaydedilemedi",
       "saml_heading": "SAML 2.0 Kimlik Sağlayıcısı",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Oturum açmak için kullandığınız OIDC sağlayıcısını yapılandırın. Buraya kaydedilen değerler bu çalışma alanı için geçerlidir.",
+
+      "instance_status_enabled": "Örnek oturum açma: {name} kullanılabilir (ortam üzerinden ayarlandı).",
+
+      "instance_status_disabled": "Örnek oturum açma: OIDC devre dışı.",
+
+      "instance_status_enabled_ad": "Örnek oturum açma: Active Directory kullanılabilir (ortam üzerinden ayarlandı).",
+
+      "oidc_name_label": "Görünen ad",
+
+      "oidc_issuer_label": "Yayıncı URL",
+
+      "oidc_client_id_label": "İstemci kimliği",
+
+      "oidc_client_secret_label": "İstemci sırrı",
+
+      "instance_status_unavailable": "Örnek oturum açma: kullanılamıyor.",
+
+      "secret_placeholder": "Geçerli değeri koru (kayıtlı sırrı korumak için boş bırakın)",
+
+      "secret_required_placeholder": "İstemci sırrını girin",
+
+      "ad_url_label": "LDAP URL",
+
+      "ad_domain_label": "Alan adı",
+
+      "ad_bind_dn_label": "Bind DN",
+
+      "ad_bind_password_label": "Bind parolası",
       "saml_metadata_prefix": "Hizmet Sağlayıcı meta verileri şurada sunulur:",
       "saml_metadata_suffix": "— bunu IdP yöneticinizle paylaşın. Formu otomatik doldurmak için IdP'nin meta veri XML'ini aşağıya yükleyin.",
       "idp_metadata_label": "IdP meta veri XML'i (yapıştırın veya yükleyin)",

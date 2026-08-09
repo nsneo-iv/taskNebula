@@ -57,10 +57,18 @@ export function SsoSettingsClient({ organizationId }: { organizationId: string }
     <Tabs defaultValue="saml" className="space-y-6">
       <TabsList>
         <TabsTrigger value="saml">{t('sso.tab_saml')}</TabsTrigger>
+        <TabsTrigger value="oidc">{t('sso.tab_oidc')}</TabsTrigger>
+        <TabsTrigger value="ad">{t('sso.tab_ad')}</TabsTrigger>
         <TabsTrigger value="scim">{t('sso.tab_scim')}</TabsTrigger>
       </TabsList>
       <TabsContent value="saml">
         <SamlSection organizationId={organizationId} />
+      </TabsContent>
+      <TabsContent value="oidc">
+        <OidcSection organizationId={organizationId} />
+      </TabsContent>
+      <TabsContent value="ad">
+        <AdSection organizationId={organizationId} />
       </TabsContent>
       <TabsContent value="scim">
         <ScimSection organizationId={organizationId} />
@@ -254,6 +262,309 @@ function SamlSection({ organizationId }: { organizationId: string }) {
               />
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="border-border flex items-center justify-between gap-4 border-t pt-4">
+        <div className="flex items-center gap-3">
+          <Switch
+            checked={form.enabled}
+            onCheckedChange={(checked) => setForm({ ...form, enabled: checked })}
+          />
+          <span className="text-muted-foreground text-sm">{t('sso.enable_label')}</span>
+        </div>
+        <Button onClick={() => save.mutate()} disabled={save.isPending}>
+          {t('sso.save_config')}
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+type ProviderAvailability = {
+  oidcEnabled: boolean;
+  oidcName: string | null;
+  adEnabled: boolean;
+};
+
+function useProviderAvailability() {
+  const { data } = useQuery<ProviderAvailability>({
+    queryKey: ['oauth-providers-status'],
+    queryFn: async () => {
+      const r = await fetch('/api/auth/oauth-providers', { cache: 'no-store' });
+      if (!r.ok) return { oidcEnabled: false, oidcName: null, adEnabled: false };
+      const payload = await r.json().catch(() => ({}));
+      return {
+        oidcEnabled: payload?.providers?.oidc === true,
+        oidcName: payload?.oidcName ?? null,
+        adEnabled: payload?.ad === true,
+      };
+    },
+  });
+  return data ?? { oidcEnabled: false, oidcName: null, adEnabled: false };
+}
+
+function useOrgSettings(organizationId: string) {
+  const orgQuery = useQuery<{ settings: Record<string, unknown> }>({
+    queryKey: ['organization', organizationId],
+    queryFn: async () => {
+      const r = await fetch(`/api/organizations/${organizationId}`);
+      if (!r.ok) throw new Error('Failed to load organization');
+      const payload = await r.json();
+      return { settings: payload?.settings ?? {} };
+    },
+  });
+  return orgQuery;
+}
+
+type OidcSettings = {
+  enabled: boolean;
+  name: string;
+  issuer: string;
+  clientId: string;
+  clientSecret: string;
+};
+
+type AdSettings = {
+  enabled: boolean;
+  url: string;
+  domain: string;
+  bindDn: string;
+  bindPassword: string;
+};
+
+function saveOrgSettings(organizationId: string, patch: Record<string, unknown>) {
+  return fetch(`/api/organizations/${organizationId}`, {
+    method: 'PATCH',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ settings: patch }),
+  });
+}
+
+function OidcSection({ organizationId }: { organizationId: string }) {
+  const t = useTranslations('settingsConfig');
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+  const status = useProviderAvailability();
+  const orgQuery = useOrgSettings(organizationId);
+  const stored = (orgQuery.data?.settings?.ssoOidc as Partial<OidcSettings> | undefined) ?? {};
+  const [form, setForm] = useState<OidcSettings>({
+    enabled: false,
+    name: '',
+    issuer: '',
+    clientId: '',
+    clientSecret: '',
+  });
+
+  useEffect(() => {
+    if (!orgQuery.data) return;
+    setForm((prev) => ({
+      enabled: stored.enabled ?? prev.enabled,
+      name: stored.name ?? prev.name,
+      issuer: stored.issuer ?? prev.issuer,
+      clientId: stored.clientId ?? prev.clientId,
+      clientSecret: stored.clientSecret ? '' : prev.clientSecret,
+    }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [orgQuery.data]);
+
+  const save = useMutation({
+    mutationFn: async () => {
+      const patch: Record<string, unknown> = {
+        enabled: form.enabled,
+        name: form.name.trim(),
+        issuer: form.issuer.trim(),
+        clientId: form.clientId.trim(),
+      };
+      if (form.clientSecret.trim()) patch.clientSecret = form.clientSecret.trim();
+      const r = await saveOrgSettings(organizationId, { ssoOidc: patch });
+      if (!r.ok) throw new Error(t('sso.save_failed'));
+    },
+    onSuccess: () => {
+      toast({ title: t('sso.config_saved') });
+      queryClient.invalidateQueries({ queryKey: ['organization', organizationId] });
+    },
+    onError: () =>
+      toast({
+        title: t('sso.config_save_failed'),
+        description: t('sso.save_failed'),
+        variant: 'destructive',
+      }),
+  });
+
+  return (
+    <div className="border-border bg-card space-y-6 rounded-md border p-6">
+      <div>
+        <h2 className="text-lg font-semibold">{t('sso.oidc_heading')}</h2>
+        <p className="text-muted-foreground text-sm">{t('sso.oidc_desc')}</p>
+        <p className="text-muted-foreground mt-2 text-xs">
+          {status.oidcEnabled
+            ? t('sso.instance_status_enabled', { name: status.oidcName ?? 'OIDC' })
+            : t('sso.instance_status_disabled')}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="space-y-2">
+          <Label htmlFor="oidc-name">{t('sso.oidc_name_label')}</Label>
+          <Input
+            id="oidc-name"
+            value={form.name}
+            onChange={(e) => setForm({ ...form, name: e.target.value })}
+            placeholder="Corp SSO"
+          />
+        </div>
+        <div className="space-y-2 md:col-span-2">
+          <Label htmlFor="oidc-issuer">{t('sso.oidc_issuer_label')}</Label>
+          <Input
+            id="oidc-issuer"
+            value={form.issuer}
+            onChange={(e) => setForm({ ...form, issuer: e.target.value })}
+            placeholder="https://idp.example.com/realms/main"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="oidc-client-id">{t('sso.oidc_client_id_label')}</Label>
+          <Input
+            id="oidc-client-id"
+            value={form.clientId}
+            onChange={(e) => setForm({ ...form, clientId: e.target.value })}
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="oidc-client-secret">{t('sso.oidc_client_secret_label')}</Label>
+          <Input
+            id="oidc-client-secret"
+            type="password"
+            autoComplete="new-password"
+            value={form.clientSecret}
+            onChange={(e) => setForm({ ...form, clientSecret: e.target.value })}
+            placeholder={
+              stored.clientSecret ? t('sso.secret_placeholder') : t('sso.secret_required_placeholder')
+            }
+          />
+        </div>
+      </div>
+
+      <div className="border-border flex items-center justify-between gap-4 border-t pt-4">
+        <div className="flex items-center gap-3">
+          <Switch
+            checked={form.enabled}
+            onCheckedChange={(checked) => setForm({ ...form, enabled: checked })}
+          />
+          <span className="text-muted-foreground text-sm">{t('sso.enable_label')}</span>
+        </div>
+        <Button onClick={() => save.mutate()} disabled={save.isPending}>
+          {t('sso.save_config')}
+        </Button>
+      </div>
+    </div>
+  );
+}
+
+function AdSection({ organizationId }: { organizationId: string }) {
+  const t = useTranslations('settingsConfig');
+  const { toast } = useToast();
+  const queryClient = useQueryClient();
+  const status = useProviderAvailability();
+  const orgQuery = useOrgSettings(organizationId);
+  const stored = (orgQuery.data?.settings?.ssoAd as Partial<AdSettings> | undefined) ?? {};
+  const [form, setForm] = useState<AdSettings>({
+    enabled: false,
+    url: '',
+    domain: '',
+    bindDn: '',
+    bindPassword: '',
+  });
+
+  useEffect(() => {
+    if (!orgQuery.data) return;
+    setForm((prev) => ({
+      enabled: stored.enabled ?? prev.enabled,
+      url: stored.url ?? prev.url,
+      domain: stored.domain ?? prev.domain,
+      bindDn: stored.bindDn ?? prev.bindDn,
+      bindPassword: stored.bindPassword ? '' : prev.bindPassword,
+    }));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [orgQuery.data]);
+
+  const save = useMutation({
+    mutationFn: async () => {
+      const patch: Record<string, unknown> = {
+        enabled: form.enabled,
+        url: form.url.trim(),
+        domain: form.domain.trim(),
+        bindDn: form.bindDn.trim(),
+      };
+      if (form.bindPassword.trim()) patch.bindPassword = form.bindPassword.trim();
+      const r = await saveOrgSettings(organizationId, { ssoAd: patch });
+      if (!r.ok) throw new Error(t('sso.save_failed'));
+    },
+    onSuccess: () => {
+      toast({ title: t('sso.config_saved') });
+      queryClient.invalidateQueries({ queryKey: ['organization', organizationId] });
+    },
+    onError: () =>
+      toast({
+        title: t('sso.config_save_failed'),
+        description: t('sso.save_failed'),
+        variant: 'destructive',
+      }),
+  });
+
+  return (
+    <div className="border-border bg-card space-y-6 rounded-md border p-6">
+      <div>
+        <h2 className="text-lg font-semibold">{t('sso.ad_heading')}</h2>
+        <p className="text-muted-foreground text-sm">{t('sso.ad_desc')}</p>
+        <p className="text-muted-foreground mt-2 text-xs">
+          {status.adEnabled
+            ? t('sso.instance_status_enabled_ad')
+            : t('sso.instance_status_disabled')}
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
+        <div className="space-y-2">
+          <Label htmlFor="ad-url">{t('sso.ad_url_label')}</Label>
+          <Input
+            id="ad-url"
+            value={form.url}
+            onChange={(e) => setForm({ ...form, url: e.target.value })}
+            placeholder="ldap://dc.example.com:389"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="ad-domain">{t('sso.ad_domain_label')}</Label>
+          <Input
+            id="ad-domain"
+            value={form.domain}
+            onChange={(e) => setForm({ ...form, domain: e.target.value })}
+            placeholder="corp.example.com"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="ad-bind-dn">{t('sso.ad_bind_dn_label')}</Label>
+          <Input
+            id="ad-bind-dn"
+            value={form.bindDn}
+            onChange={(e) => setForm({ ...form, bindDn: e.target.value })}
+            placeholder="CN=svc-tasknebula,CN=Users,DC=corp,DC=example,DC=com"
+          />
+        </div>
+        <div className="space-y-2">
+          <Label htmlFor="ad-bind-password">{t('sso.ad_bind_password_label')}</Label>
+          <Input
+            id="ad-bind-password"
+            type="password"
+            autoComplete="new-password"
+            value={form.bindPassword}
+            onChange={(e) => setForm({ ...form, bindPassword: e.target.value })}
+            placeholder={
+              stored.bindPassword ? t('sso.secret_placeholder') : t('sso.secret_required_placeholder')
+            }
+          />
         </div>
       </div>
 

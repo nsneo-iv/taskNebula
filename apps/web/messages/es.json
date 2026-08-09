@@ -1923,6 +1923,42 @@
       "config_saved": "Configuración de SSO guardada",
       "config_save_failed": "No se pudo guardar la configuración de SSO",
       "saml_heading": "Proveedor de identidad SAML 2.0",
+
+      "tab_oidc": "OIDC",
+
+      "tab_ad": "Active Directory",
+
+      "oidc_heading": "OpenID Connect (OIDC)",
+
+      "oidc_desc": "Configura el proveedor OIDC que usas para iniciar sesión. Los valores guardados aquí se aplican a este espacio de trabajo.",
+
+      "instance_status_enabled": "Inicio de sesión de la instancia: {name} disponible (definido mediante el entorno).",
+
+      "instance_status_disabled": "Inicio de sesión de la instancia: OIDC desactivado.",
+
+      "instance_status_enabled_ad": "Inicio de sesión de la instancia: Active Directory disponible (definido mediante el entorno).",
+
+      "oidc_name_label": "Nombre para mostrar",
+
+      "oidc_issuer_label": "URL del emisor",
+
+      "oidc_client_id_label": "ID de cliente",
+
+      "oidc_client_secret_label": "Secreto del cliente",
+
+      "instance_status_unavailable": "Inicio de sesión de la instancia: no disponible.",
+
+      "secret_placeholder": "Conservar el valor actual (déjalo vacío para mantener el secreto guardado)",
+
+      "secret_required_placeholder": "Introduce el secreto del cliente",
+
+      "ad_url_label": "URL LDAP",
+
+      "ad_domain_label": "Dominio",
+
+      "ad_bind_dn_label": "DN de enlace",
+
+      "ad_bind_password_label": "Contraseña de enlace",
       "saml_metadata_prefix": "Los metadatos del proveedor de servicios están expuestos en",
       "saml_metadata_suffix": "— compártelos con el administrador de tu IdP. Sube el XML de metadatos del IdP a continuación para rellenar el formulario automáticamente.",
       "idp_metadata_label": "XML de metadatos del IdP (pegar o subir)",
