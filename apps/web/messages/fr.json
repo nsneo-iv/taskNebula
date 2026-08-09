@@ -6083,7 +6083,21 @@
         "apiKeys": "Clés API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Entrée dans l’app",
+
+      "entryTitle": "Où les utilisateurs arrivent après connexion",
+
+      "entryDescription": "Choisissez si les utilisateurs connectés ouvrent l’app immédiatement ou passent d’abord par la page marketing.",
+
+      "skipLanding": "Passer la page d’accueil",
+
+      "skipLandingHint": "Une fois activé, les utilisateurs connectés vont directement au tableau de bord au lieu de la page d’accueil.",
+
+      "on": "Activé",
+
+      "off": "Désactivé"
     },
     "audit": {
       "loadFailed": "Échec du chargement des destinations",

@@ -6083,7 +6083,21 @@
         "apiKeys": "Chiavi API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Accesso all’app",
+
+      "entryTitle": "Dove finiscono gli utenti dopo l’accesso",
+
+      "entryDescription": "Scegli se gli utenti accedono subito all’app o vedono prima la pagina marketing.",
+
+      "skipLanding": "Salta la pagina di destinazione",
+
+      "skipLandingHint": "Se attivato, gli utenti connessi vanno direttamente alla dashboard invece della pagina di destinazione.",
+
+      "on": "Attivo",
+
+      "off": "Disattivo"
     },
     "audit": {
       "loadFailed": "Impossibile caricare i sink",

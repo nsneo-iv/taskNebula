@@ -84,6 +84,7 @@ const updateOrgSchema = z.object({
     .optional(),
   domain: z.string().max(255).optional(),
   logoUrl: z.union([z.string().url(), z.literal('')]).optional(),
+  settings: z.record(z.string(), z.unknown()).optional(),
 });
 
 export async function PATCH(
@@ -122,12 +123,31 @@ export async function PATCH(
       }
     }
 
+    const { settings, name, slug, domain, logoUrl } = data;
+
+    let mergedSettings = settings;
+    if (settings) {
+      const [currentOrg] = await db
+        .select({ settings: organizations.settings })
+        .from(organizations)
+        .where(eq(organizations.id, organizationId))
+        .limit(1);
+
+      mergedSettings = {
+        ...((currentOrg?.settings as Record<string, unknown> | undefined) ?? {}),
+        ...settings,
+      };
+    }
+
     // Update organization
     const [updatedOrg] = await db
       .update(organizations)
       .set({
-        ...data,
-        logoUrl: data.logoUrl === '' ? null : data.logoUrl,
+        ...(name ? { name } : {}),
+        ...(slug ? { slug } : {}),
+        ...(domain !== undefined ? { domain } : {}),
+        ...(logoUrl !== undefined ? { logoUrl: logoUrl === '' ? null : logoUrl } : {}),
+        ...(mergedSettings ? { settings: mergedSettings } : {}),
         updatedAt: new Date(),
       })
       .where(eq(organizations.id, organizationId))

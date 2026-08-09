@@ -6083,7 +6083,21 @@
         "apiKeys": "API-kulcsok"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Belépés az alkalmazásba",
+
+      "entryTitle": "Hová kerülnek a felhasználók bejelentkezés után",
+
+      "entryDescription": "Válassza ki, hogy a bejelentkezett felhasználók azonnal megnyitják-e az appot, vagy előbb a marketingoldalt látják.",
+
+      "skipLanding": "Nyitóoldal kihagyása",
+
+      "skipLandingHint": "Bekapcsolva a bejelentkezett felhasználók egyenesen a műszerfalra kerülnek a nyitóoldal helyett.",
+
+      "on": "Be",
+
+      "off": "Ki"
     },
     "audit": {
       "loadFailed": "A célhelyek betöltése sikertelen",

@@ -6083,7 +6083,21 @@
         "apiKeys": "API 金鑰"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "應用程式入口",
+
+      "entryTitle": "登入後前往哪裡",
+
+      "entryDescription": "選擇已登入使用者是直接進入應用程式，還是先看到行銷頁面。",
+
+      "skipLanding": "跳過登陸頁",
+
+      "skipLandingHint": "啟用後，已登入使用者會直接前往儀表板，而非登陸頁。",
+
+      "on": "開",
+
+      "off": "關"
     },
     "audit": {
       "loadFailed": "無法載入接收端",

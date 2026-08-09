@@ -6083,7 +6083,21 @@
         "apiKeys": "Kunci API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Masuk ke aplikasi",
+
+      "entryTitle": "Ke mana pengguna pergi setelah masuk",
+
+      "entryDescription": "Pilih apakah pengguna yang masuk langsung membuka aplikasi atau melihat halaman pemasaran terlebih dahulu.",
+
+      "skipLanding": "Lewati halaman arahan",
+
+      "skipLandingHint": "Jika diaktifkan, pengguna yang masuk langsung menuju dasbor, bukan halaman arahan.",
+
+      "on": "Aktif",
+
+      "off": "Nonaktif"
     },
     "audit": {
       "loadFailed": "Gagal memuat sink",

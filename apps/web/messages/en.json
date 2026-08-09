@@ -6083,7 +6083,21 @@
         "apiKeys": "API keys"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "App entry",
+
+      "entryTitle": "Where users land after sign-in",
+
+      "entryDescription": "Choose whether signed-in users open the app right away or land on the marketing page first.",
+
+      "skipLanding": "Skip landing page",
+
+      "skipLandingHint": "When enabled, signed-in users go straight to the dashboard instead of the landing page.",
+
+      "on": "On",
+
+      "off": "Off"
     },
     "audit": {
       "loadFailed": "Failed to load sinks",

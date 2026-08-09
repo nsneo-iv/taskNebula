@@ -6083,7 +6083,21 @@
         "apiKeys": "API-nøgler"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "App-adgang",
+
+      "entryTitle": "Hvor brugere havner efter login",
+
+      "entryDescription": "Vælg, om loggede ind brugere åbner appen med det samme eller først ser marketing-siden.",
+
+      "skipLanding": "Spring landingssiden over",
+
+      "skipLandingHint": "Når aktiveret, går loggede ind brugere direkte til dashboardet i stedet for landingssiden.",
+
+      "on": "Til",
+
+      "off": "Fra"
     },
     "audit": {
       "loadFailed": "Modtagere kunne ikke indlæses",

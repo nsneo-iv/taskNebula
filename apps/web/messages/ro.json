@@ -6083,7 +6083,21 @@
         "apiKeys": "Chei API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Intrarea în aplicație",
+
+      "entryTitle": "Unde ajung utilizatorii după autentificare",
+
+      "entryDescription": "Alegeți dacă utilizatorii autentificați deschid aplicația imediat sau văd mai întâi pagina de marketing.",
+
+      "skipLanding": "Sari pagina de destinație",
+
+      "skipLandingHint": "Când este activată, utilizatorii autentificați ajung direct pe tabloul de bord, nu pe pagina de destinație.",
+
+      "on": "Activat",
+
+      "off": "Dezactivat"
     },
     "audit": {
       "loadFailed": "Nu s-au putut încărca destinațiile",

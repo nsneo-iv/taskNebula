@@ -6083,7 +6083,21 @@
         "apiKeys": "مفاتيح API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "دخول التطبيق",
+
+      "entryTitle": "أين يذهب المستخدمون بعد تسجيل الدخول",
+
+      "entryDescription": "اختر ما إذا كان المستخدمون المسجلون يفتحون التطبيق فورًا أو يشاهدون صفحة التسويق أولاً.",
+
+      "skipLanding": "تخطي الصفحة الرئيسية",
+
+      "skipLandingHint": "عند التفعيل، ينتقل المستخدمون المسجلون مباشرة إلى لوحة التحكم بدلاً من الصفحة الرئيسية.",
+
+      "on": "مفعّل",
+
+      "off": "معطّل"
     },
     "audit": {
       "loadFailed": "تعذّر تحميل الوجهات",

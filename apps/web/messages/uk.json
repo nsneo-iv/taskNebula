@@ -6083,7 +6083,21 @@
         "apiKeys": "Ключі API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Вхід у застосунок",
+
+      "entryTitle": "Куди потрапляють користувачі після входу",
+
+      "entryDescription": "Виберіть, чи відкривається застосунок одразу після входу, чи спочатку показується головна сторінка.",
+
+      "skipLanding": "Пропускати головну сторінку",
+
+      "skipLandingHint": "Якщо ввімкнено, користувачі після входу одразу потрапляють на дашборд.",
+
+      "on": "Увімк.",
+
+      "off": "Вимк."
     },
     "audit": {
       "loadFailed": "Не вдалося завантажити приймачі",

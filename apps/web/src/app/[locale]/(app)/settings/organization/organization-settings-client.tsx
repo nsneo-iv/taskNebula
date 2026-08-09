@@ -15,6 +15,7 @@ import {
 } from '@/components/ui/dialog';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Switch } from '@/components/ui/switch';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
 import { useOrganization } from '@/lib/hooks/use-organization';
@@ -75,6 +76,7 @@ export function OrganizationSettingsClient() {
   const requestedTab = searchParams.get('tab');
 
   const [formData, setFormData] = useState(EMPTY_FORM);
+  const [skipLanding, setSkipLanding] = useState(false);
   const [activeTab, setActiveTab] = useState(
     requestedTab === 'teamspaces' || requestedTab === 'danger' ? requestedTab : 'general'
   );
@@ -104,6 +106,7 @@ export function OrganizationSettingsClient() {
       domain: org.domain || '',
       logoUrl: org.logoUrl || '',
     });
+    setSkipLanding(org.settings?.skipLanding === true);
   }, [org]);
 
   useEffect(() => {
@@ -133,6 +136,31 @@ export function OrganizationSettingsClient() {
       toast({ title: t('org.updated'), description: t('org.updatedDesc') });
     },
     onError: () => {
+      toast({
+        title: t('org.updateFailed'),
+        description: t('org.updateFailed'),
+        variant: 'destructive',
+      });
+    },
+  });
+
+  const skipLandingMutation = useMutation({
+    mutationFn: async (enabled: boolean) => {
+      const response = await fetch(`/api/organizations/${currentOrganizationId}`, {
+        method: 'PATCH',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ settings: { skipLanding: enabled } }),
+      });
+      const payload = await response.json().catch(() => ({ error: t('org.updateFailed') }));
+      if (!response.ok) throw new Error(payload.error || t('org.updateFailed'));
+      return payload;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['organization', currentOrganizationId] });
+      toast({ title: t('org.updated'), description: t('org.updatedDesc') });
+    },
+    onError: () => {
+      setSkipLanding((current) => !current);
       toast({
         title: t('org.updateFailed'),
         description: t('org.updateFailed'),
@@ -322,6 +350,41 @@ export function OrganizationSettingsClient() {
           </TabsList>
 
           <TabsContent value="general" className="space-y-8">
+            <section className="space-y-4">
+              <div className="space-y-1">
+                <span className="kicker">{t('org.entryKicker')}</span>
+                <h2 className="text-lg font-semibold tracking-tight">{t('org.entryTitle')}</h2>
+                <p className="text-muted-foreground max-w-prose text-sm">
+                  {t('org.entryDescription')}
+                </p>
+              </div>
+
+              <div className="surface-card space-y-4 rounded-lg p-6">
+                <div className="grid grid-cols-1 items-start gap-4 md:grid-cols-[240px_1fr]">
+                  <div className="space-y-1">
+                    <Label htmlFor="org-skip-landing" className="text-sm font-medium">
+                      {t('org.skipLanding')}
+                    </Label>
+                    <p className="text-muted-foreground text-xs">{t('org.skipLandingHint')}</p>
+                  </div>
+                  <div className="flex items-center gap-3">
+                    <Switch
+                      id="org-skip-landing"
+                      checked={skipLanding}
+                      onCheckedChange={(checked) => {
+                        setSkipLanding(checked);
+                        skipLandingMutation.mutate(checked);
+                      }}
+                      disabled={!canManageSettings || skipLandingMutation.isPending}
+                    />
+                    <span className="text-muted-foreground text-sm">
+                      {skipLanding ? t('org.on') : t('org.off')}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </section>
+
             <section className="space-y-4">
               <div className="space-y-1">
                 <span className="kicker">{t('org.detailsKicker')}</span>

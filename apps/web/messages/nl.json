@@ -6083,7 +6083,21 @@
         "apiKeys": "API-sleutels"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Toegang tot de app",
+
+      "entryTitle": "Waar gebruikers terechtkomen na aanmelding",
+
+      "entryDescription": "Kies of aangemelde gebruikers direct de app openen of eerst de marketingpagina zien.",
+
+      "skipLanding": "Landingspagina overslaan",
+
+      "skipLandingHint": "Als dit is ingeschakeld, gaan aangemelde gebruikers meteen naar het dashboard in plaats van de landingspagina.",
+
+      "on": "Aan",
+
+      "off": "Uit"
     },
     "audit": {
       "loadFailed": "Laden van sinks mislukt",

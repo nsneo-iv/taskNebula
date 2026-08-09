@@ -6083,7 +6083,21 @@
         "apiKeys": "API-avaimet"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Sovellukseen kirjautuminen",
+
+      "entryTitle": "Mihin käyttäjät päätyvät kirjautumisen jälkeen",
+
+      "entryDescription": "Valitse, avaavatko kirjautuneet käyttäjät sovelluksen heti vai näkevätkö ensin markkinointisivun.",
+
+      "skipLanding": "Ohita aloitussivu",
+
+      "skipLandingHint": "Kun käytössä, kirjautuneet käyttäjät menevät suoraan kojelautaan aloitussivun sijaan.",
+
+      "on": "Päällä",
+
+      "off": "Pois"
     },
     "audit": {
       "loadFailed": "Vastaanottimien lataus epäonnistui",

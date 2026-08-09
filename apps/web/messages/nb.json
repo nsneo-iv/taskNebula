@@ -6083,7 +6083,21 @@
         "apiKeys": "API-nøkler"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "App-inngang",
+
+      "entryTitle": "Hvor brukere havner etter innlogging",
+
+      "entryDescription": "Velg om innloggede brukere åpner appen med en gang eller først ser markedsføringssiden.",
+
+      "skipLanding": "Hopp over landingssiden",
+
+      "skipLandingHint": "Når aktivert, går innloggede brukere rett til dashbordet i stedet for landingssiden.",
+
+      "on": "På",
+
+      "off": "Av"
     },
     "audit": {
       "loadFailed": "Kunne ikke laste mottakere",

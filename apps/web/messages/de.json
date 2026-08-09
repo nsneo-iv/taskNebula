@@ -6083,7 +6083,21 @@
         "apiKeys": "API-Schlüssel"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "App-Einstieg",
+
+      "entryTitle": "Wohin Nutzer nach der Anmeldung gelangen",
+
+      "entryDescription": "Legen Sie fest, ob angemeldete Nutzer direkt die App öffnen oder zuerst auf der Marketingseite landen.",
+
+      "skipLanding": "Landingpage überspringen",
+
+      "skipLandingHint": "Wenn aktiviert, gelangen angemeldete Nutzer direkt zum Dashboard statt zur Landingpage.",
+
+      "on": "Ein",
+
+      "off": "Aus"
     },
     "audit": {
       "loadFailed": "Sinks konnten nicht geladen werden",

@@ -1,5 +1,9 @@
 import type { Metadata } from 'next';
+import { redirect } from 'next/navigation';
 import { getTranslations } from 'next-intl/server';
+import { and, eq } from 'drizzle-orm';
+import { auth } from '@/auth';
+import { db, organizations, organizationMembers } from '@tasknebula/db';
 import webPackage from '../../package.json';
 import { HeroShowcase } from '@/components/landing/product-showcase';
 import { AiMcpSection } from '@/components/marketing/ai-mcp-section';
@@ -54,6 +58,31 @@ export async function generateMetadata(): Promise<Metadata> {
  */
 export default async function HomePage() {
   const t = await getTranslations('publicPages.landing.meta');
+
+  const session = await auth();
+  if (session?.user?.id) {
+    const [membership] = await db
+      .select({ organizationId: organizationMembers.organizationId })
+      .from(organizationMembers)
+      .where(
+        and(eq(organizationMembers.userId, session.user.id), eq(organizationMembers.status, 'active'))
+      )
+      .limit(1);
+
+    if (membership) {
+      const [org] = await db
+        .select({ settings: organizations.settings })
+        .from(organizations)
+        .where(eq(organizations.id, membership.organizationId))
+        .limit(1);
+
+      const settings = org?.settings as Record<string, unknown> | undefined;
+      if (settings?.skipLanding === true) {
+        redirect('/dashboard');
+      }
+    }
+  }
+
   const softwareApplicationJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'SoftwareApplication',

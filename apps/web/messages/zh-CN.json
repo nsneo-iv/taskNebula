@@ -6083,7 +6083,21 @@
         "apiKeys": "API 密钥"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "应用入口",
+
+      "entryTitle": "登录后的落点",
+
+      "entryDescription": "选择已登录用户是直接进入应用，还是先看到营销落地页。",
+
+      "skipLanding": "跳过落地页",
+
+      "skipLandingHint": "启用后，已登录用户将直接进入仪表盘，而不是落地页。",
+
+      "on": "开",
+
+      "off": "关"
     },
     "audit": {
       "loadFailed": "加载接收端失败",

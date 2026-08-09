@@ -6083,7 +6083,21 @@
         "apiKeys": "API klíče"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Vstup do aplikace",
+
+      "entryTitle": "Kam uživatelé směřují po přihlášení",
+
+      "entryDescription": "Zvolte, zda se přihlášení uživatelé dostanou rovnou do aplikace, nebo nejprve na marketingovou stránku.",
+
+      "skipLanding": "Přeskočit úvodní stránku",
+
+      "skipLandingHint": "Po zapnutí se přihlášení uživatelé dostanou rovnou na nástěnku místo úvodní stránky.",
+
+      "on": "Zapnuto",
+
+      "off": "Vypnuto"
     },
     "audit": {
       "loadFailed": "Nepodařilo se načíst cíle",

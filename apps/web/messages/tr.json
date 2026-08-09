@@ -6083,7 +6083,21 @@
         "apiKeys": "API anahtarları"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Uygulamaya giriş",
+
+      "entryTitle": "Giriş yaptıktan sonra kullanıcılar nereye gider",
+
+      "entryDescription": "Giriş yapan kullanıcıların uygulamayı hemen mı açacağını yoksa önce pazarlama sayfasını mı göreceğini seçin.",
+
+      "skipLanding": "Açılış sayfasını atla",
+
+      "skipLandingHint": "Etkinleştirildiğinde, giriş yapan kullanıcılar açılış sayfası yerine doğrudan panele gider.",
+
+      "on": "Açık",
+
+      "off": "Kapalı"
     },
     "audit": {
       "loadFailed": "Hedefler yüklenemedi",

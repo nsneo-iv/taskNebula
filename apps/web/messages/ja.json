@@ -6083,7 +6083,21 @@
         "apiKeys": "APIキー"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "アプリの入口",
+
+      "entryTitle": "サインイン後にユーザーが行き着く場所",
+
+      "entryDescription": "サインイン済みユーザーがすぐにアプリを開くか、先にマーケティングページを表示するかを選択します。",
+
+      "skipLanding": "ランディングページをスキップ",
+
+      "skipLandingHint": "有効にすると、サインイン済みユーザーはランディングページではなくダッシュボードに直接移動します。",
+
+      "on": "オン",
+
+      "off": "オフ"
     },
     "audit": {
       "loadFailed": "シンクの読み込みに失敗しました",

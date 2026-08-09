@@ -6083,7 +6083,21 @@
         "apiKeys": "מפתחות API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "כניסה לאפליקציה",
+
+      "entryTitle": "לאן משתמשים מגיעים לאחר הכניסה",
+
+      "entryDescription": "בחרו האם משתמשים מחוברים פותחים את האפליקציה מיד או רואים תחילה את דף השיווק.",
+
+      "skipLanding": "דלג על דף הנחיתה",
+
+      "skipLandingHint": "כשפעיל, משתמשים מחוברים עוברים ישירות ללוח המחוונים במקום לדף הנחיתה.",
+
+      "on": "מופעל",
+
+      "off": "מכובה"
     },
     "audit": {
       "loadFailed": "טעינת היעדים נכשלה",

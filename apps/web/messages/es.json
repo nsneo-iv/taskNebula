@@ -6083,7 +6083,21 @@
         "apiKeys": "Claves de API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Entrada a la aplicación",
+
+      "entryTitle": "A dónde van los usuarios tras iniciar sesión",
+
+      "entryDescription": "Elige si los usuarios con sesión iniciada abren la app de inmediato o ven primero la página de marketing.",
+
+      "skipLanding": "Omitir la página de aterrizaje",
+
+      "skipLandingHint": "Al activarlo, los usuarios con sesión iniciada van directo al panel en lugar de la página de aterrizaje.",
+
+      "on": "Activado",
+
+      "off": "Desactivado"
     },
     "audit": {
       "loadFailed": "No se pudieron cargar los destinos",

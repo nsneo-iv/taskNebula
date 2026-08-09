@@ -6083,7 +6083,21 @@
         "apiKeys": "Κλειδιά API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Είσοδος στην εφαρμογή",
+
+      "entryTitle": "Πού καταλήγουν οι χρήστες μετά την είσοδο",
+
+      "entryDescription": "Επιλέξτε αν οι συνδεδεμένοι χρήστες ανοίγουν την εφαρμογή αμέσως ή βλέπουν πρώτα τη σελίδα προβολής.",
+
+      "skipLanding": "Παράλειψη της αρχικής σελίδας",
+
+      "skipLandingHint": "Όταν ενεργοποιηθεί, οι συνδεδεμένοι χρήστες πηγαίνουν κατευθείαν στον πίνακα ελέγχου αντί για την αρχική σελίδα.",
+
+      "on": "Ενεργό",
+
+      "off": "Ανενεργό"
     },
     "audit": {
       "loadFailed": "Αποτυχία φόρτωσης sinks",

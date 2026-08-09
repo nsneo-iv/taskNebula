@@ -6083,7 +6083,21 @@
         "apiKeys": "API कुंजियां"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "ऐप में प्रवेश",
+
+      "entryTitle": "साइन-इन के बाद उपयोगकर्ता कहाँ जाते हैं",
+
+      "entryDescription": "चुनें कि साइन-इन किए उपयोगकर्ता तुरंत ऐप खोलते हैं या पहले मार्केटिंग पेज देखते हैं।",
+
+      "skipLanding": "लैंडिंग पेज छोड़ें",
+
+      "skipLandingHint": "सक्षम होने पर, साइन-इन किए उपयोगकर्ता लैंडिंग पेज के बजाय सीधे डैशबोर्ड पर जाते हैं।",
+
+      "on": "चालू",
+
+      "off": "बंद"
     },
     "audit": {
       "loadFailed": "सिंक लोड करने में विफल",

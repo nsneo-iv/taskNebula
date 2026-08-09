@@ -6083,7 +6083,21 @@
         "apiKeys": "API-nycklar"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Ingång till appen",
+
+      "entryTitle": "Vart användare hamnar efter inloggning",
+
+      "entryDescription": "Välj om inloggade användare öppnar appen direkt eller först ser marknadssidan.",
+
+      "skipLanding": "Hoppa över landningssidan",
+
+      "skipLandingHint": "När det är aktiverat går inloggade användare direkt till instrumentpanelen i stället för landningssidan.",
+
+      "on": "På",
+
+      "off": "Av"
     },
     "audit": {
       "loadFailed": "Det gick inte att läsa in destinationer",

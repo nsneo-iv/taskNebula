@@ -6083,7 +6083,21 @@
         "apiKeys": "คีย์ API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "การเข้าสู่แอป",
+
+      "entryTitle": "ผู้ใช้จะไปที่ไหนหลังเข้าสู่ระบบ",
+
+      "entryDescription": "เลือกว่าผู้ใช้ที่เข้าสู่ระบบแล้วจะเปิดแอปทันทีหรือเห็นหน้าแรกก่อน",
+
+      "skipLanding": "ข้ามหน้าแรก",
+
+      "skipLandingHint": "เมื่อเปิดใช้งาน ผู้ใช้ที่เข้าสู่ระบบแล้วจะไปที่แดชบอร์ดโดยตรงแทนหน้าแรก",
+
+      "on": "เปิด",
+
+      "off": "ปิด"
     },
     "audit": {
       "loadFailed": "โหลดปลายทางไม่สำเร็จ",

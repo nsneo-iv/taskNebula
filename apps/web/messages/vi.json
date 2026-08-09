@@ -6083,7 +6083,21 @@
         "apiKeys": "Khóa API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Vào ứng dụng",
+
+      "entryTitle": "Người dùng đi đâu sau khi đăng nhập",
+
+      "entryDescription": "Chọn xem người dùng đã đăng nhập mở ứng dụng ngay hay xem trang tiếp thị trước.",
+
+      "skipLanding": "Bỏ qua trang chủ",
+
+      "skipLandingHint": "Khi bật, người dùng đã đăng nhập sẽ vào bảng điều khiển ngay thay vì trang chủ.",
+
+      "on": "Bật",
+
+      "off": "Tắt"
     },
     "audit": {
       "loadFailed": "Không thể tải các đích đến",

@@ -6083,7 +6083,21 @@
         "apiKeys": "API ключове"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Вход в приложението",
+
+      "entryTitle": "Къде попадат потребителите след влизане",
+
+      "entryDescription": "Изберете дали влезлите потребители отварят приложението веднага или първо виждат маркетинговата страница.",
+
+      "skipLanding": "Пропусни началната страница",
+
+      "skipLandingHint": "Когато е активирано, влезлите потребители отиват направо в таблото вместо на началната страница.",
+
+      "on": "Вкл.",
+
+      "off": "Изкл."
     },
     "audit": {
       "loadFailed": "Зареждането на получателите е неуспешно",

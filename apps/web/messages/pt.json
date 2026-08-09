@@ -6083,7 +6083,21 @@
         "apiKeys": "Chaves de API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Entrada no aplicativo",
+
+      "entryTitle": "Para onde os usuários vão após o login",
+
+      "entryDescription": "Escolha se os usuários conectados abrem o aplicativo imediatamente ou veem primeiro a página de marketing.",
+
+      "skipLanding": "Pular a página inicial",
+
+      "skipLandingHint": "Ao ativar, os usuários conectados vão direto ao painel em vez da página inicial.",
+
+      "on": "Ligado",
+
+      "off": "Desligado"
     },
     "audit": {
       "loadFailed": "Falha ao carregar os destinos",

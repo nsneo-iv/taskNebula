@@ -6083,7 +6083,21 @@
         "apiKeys": "Klucze API"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Wejście do aplikacji",
+
+      "entryTitle": "Gdzie trafiają użytkownicy po zalogowaniu",
+
+      "entryDescription": "Wybierz, czy zalogowani użytkownicy od razu otworzą aplikację, czy najpierw zobaczą stronę marketingową.",
+
+      "skipLanding": "Pomiń stronę główną",
+
+      "skipLandingHint": "Po włączeniu zalogowani użytkownicy trafiają od razu na pulpit zamiast na stronę główną.",
+
+      "on": "Wł.",
+
+      "off": "Wył."
     },
     "audit": {
       "loadFailed": "Nie udało się załadować odbiorników",

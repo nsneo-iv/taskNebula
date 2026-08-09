@@ -6083,7 +6083,21 @@
         "apiKeys": "API 키"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "앱 진입",
+
+      "entryTitle": "로그인 후 사용자가 이동할 곳",
+
+      "entryDescription": "로그인한 사용자가 앱을 바로 열지, 먼저 마케팅 페이지를 볼지 선택하세요.",
+
+      "skipLanding": "랜딩 페이지 건너뛰기",
+
+      "skipLandingHint": "활성화하면 로그인한 사용자가 랜딩 페이지 대신 대시보드로 바로 이동합니다.",
+
+      "on": "켜짐",
+
+      "off": "꺼짐"
     },
     "audit": {
       "loadFailed": "싱크를 불러오지 못했습니다",

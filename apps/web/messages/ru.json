@@ -6083,7 +6083,21 @@
         "apiKeys": "API-ключи"
       },
       "logoPlaceholder": "https://cdn.example.com/logo.png",
-      "domainPlaceholder": "company.com"
+      "domainPlaceholder": "company.com",
+
+      "entryKicker": "Вход в приложение",
+
+      "entryTitle": "Куда попадают пользователи после входа",
+
+      "entryDescription": "Выберите, сразу ли открывать приложение после входа или сначала показывать главную страницу.",
+
+      "skipLanding": "Пропускать главную страницу",
+
+      "skipLandingHint": "Если включено, после входа пользователи сразу попадают на дашборд.",
+
+      "on": "Вкл.",
+
+      "off": "Выкл."
     },
     "audit": {
       "loadFailed": "Не удалось загрузить приёмники",
