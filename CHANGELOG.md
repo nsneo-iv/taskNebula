@@ -6,6 +6,38 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+## [0.15.0] - 2026-08-09
+
+### Added
+
+- **Windows AD (LDAP) sign-in provider.** Sign-in form now offers an Active
+  Directory tab (shown when the instance exposes an AD/LDAP server via
+  environment), backed by `ldapts` bind authentication.
+- **Generic OIDC (SSO) sign-in provider.** Any OIDC provider can act as the
+  instance sign-in method; the SSO tab renders provider buttons for
+  configured OAuth/OIDC providers.
+- **Email | SSO | AD tabs on the sign-in window.** The authentication window
+  switches between tabs instead of stacking every method on one page.
+- **SSO settings section in workspace settings.** OIDC (display name, issuer,
+  client ID, client secret) and Active Directory (LDAP URL, domain, bind DN,
+  bind password) can be configured per workspace; instance-level availability
+  is controlled via environment. Saved values live in `organizations.settings`
+  (`ssoOidc` / `ssoAd`).
+- **Skip-landing workspace setting.** Workspaces can toggle "land on
+  dashboard" so signed-in users skip the landing page.
+
+### Changed
+
+- **Sign-in window layout simplified.** The left brand panel is gone; the form
+  is centered and keeps the provider tabs and sign-up link.
+- **OAuth/OIDC provider buttons moved into the SSO tab** of the sign-in
+  window.
+
+### Fixed
+
+- AD provider reads ldapts v8 top-level attributes (bind group/scope results).
+- Tailwind plugin imported with an ESM-compatible path (`tailwindcss-animate`).
+
 ## [0.14.0] - 2026-07-27
 
 ### Added
