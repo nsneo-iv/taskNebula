@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Lub kontynuuj przez e-mail",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Nieprawidłowy adres e-mail lub hasło",
     "generic_error": "Wystąpił błąd. Spróbuj ponownie.",
     "banner_email_verified": "Adres e-mail zweryfikowany. Zaloguj się, aby kontynuować.",

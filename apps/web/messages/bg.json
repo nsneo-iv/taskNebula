@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продължи с имейл",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Невалиден имейл или парола",
     "generic_error": "Възникна грешка. Моля, опитайте отново.",
     "banner_email_verified": "Имейлът е потвърден. Влезте, за да продължите.",

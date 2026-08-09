@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Eller fortsæt med e-mail",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Ugyldig e-mail eller adgangskode",
     "generic_error": "Der opstod en fejl. Prøv igen.",
     "banner_email_verified": "E-mail bekræftet. Log ind for at fortsætte.",

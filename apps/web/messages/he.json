@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "או המשיכו עם אימייל",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "אימייל או סיסמה שגויים",
     "generic_error": "אירעה שגיאה. נסו שוב.",
     "banner_email_verified": "האימייל אומת. התחברו כדי להמשיך.",

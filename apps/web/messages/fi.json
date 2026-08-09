@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Tai jatka sähköpostilla",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Virheellinen sähköposti tai salasana",
     "generic_error": "Tapahtui virhe. Yritä uudelleen.",
     "banner_email_verified": "Sähköposti vahvistettu. Kirjaudu sisään jatkaaksesi.",

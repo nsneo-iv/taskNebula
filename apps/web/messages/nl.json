@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Of ga verder met e-mail",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Ongeldig e-mailadres of wachtwoord",
     "generic_error": "Er is een fout opgetreden. Probeer het opnieuw.",
     "banner_email_verified": "E-mailadres geverifieerd. Meld je aan om verder te gaan.",

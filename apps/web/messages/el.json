@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ή συνεχίστε με email",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Μη έγκυρο email ή κωδικός πρόσβασης",
     "generic_error": "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά.",
     "banner_email_verified": "Το email επαληθεύτηκε. Συνδεθείτε για να συνεχίσετε.",

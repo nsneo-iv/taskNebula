@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Nebo pokračujte e-mailem",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Neplatný e-mail nebo heslo",
     "generic_error": "Došlo k chybě. Zkuste to prosím znovu.",
     "banner_email_verified": "E-mail byl ověřen. Pokračujte přihlášením.",

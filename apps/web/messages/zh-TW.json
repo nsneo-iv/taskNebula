@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用電子郵件繼續",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "電子郵件或密碼錯誤",
     "generic_error": "發生錯誤，請再試一次。",
     "banner_email_verified": "電子郵件已驗證。請登入以繼續。",

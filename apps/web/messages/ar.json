@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "أو المتابعة بالبريد الإلكتروني",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "البريد الإلكتروني أو كلمة المرور غير صحيحة",
     "generic_error": "حدث خطأ. يُرجى المحاولة مرة أخرى.",
     "banner_email_verified": "تم التحقق من البريد الإلكتروني. سجّل الدخول للمتابعة.",

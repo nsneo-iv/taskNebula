@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Vagy folytatás e-mail-címmel",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Érvénytelen e-mail-cím vagy jelszó",
     "generic_error": "Hiba történt. Kérjük, próbáld újra.",
     "banner_email_verified": "E-mail-cím megerősítve. Jelentkezz be a folytatáshoz.",

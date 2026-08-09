@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "或使用邮箱继续",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "邮箱或密码无效",
     "generic_error": "发生错误，请重试。",
     "banner_email_verified": "邮箱已验证。请登录以继续。",

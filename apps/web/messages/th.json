@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "หรือดำเนินการต่อด้วยอีเมล",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "อีเมลหรือรหัสผ่านไม่ถูกต้อง",
     "generic_error": "เกิดข้อผิดพลาด กรุณาลองอีกครั้ง",
     "banner_email_verified": "ยืนยันอีเมลแล้ว เข้าสู่ระบบเพื่อดำเนินการต่อ",

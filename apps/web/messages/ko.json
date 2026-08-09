@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "또는 이메일로 계속하기",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "이메일 또는 비밀번호가 올바르지 않습니다",
     "generic_error": "오류가 발생했습니다. 다시 시도해 주세요.",
     "banner_email_verified": "이메일이 인증되었습니다. 계속하려면 로그인하세요.",

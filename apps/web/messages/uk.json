@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Або продовжити з електронною поштою",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Неправильна електронна пошта або пароль",
     "generic_error": "Сталася помилка. Спробуйте ще раз.",
     "banner_email_verified": "Електронну пошту підтверджено. Увійдіть, щоб продовжити.",

@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "या ईमेल के साथ जारी रखें",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "अमान्य ईमेल या पासवर्ड",
     "generic_error": "एक त्रुटि हुई। कृपया फिर से प्रयास करें।",
     "banner_email_verified": "ईमेल सत्यापित हो गया। जारी रखने के लिए साइन इन करें।",

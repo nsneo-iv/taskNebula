@@ -7,12 +7,13 @@ import { useTranslations } from 'next-intl';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { cn } from '@/lib/utils';
 import { AlertCircle, AlertTriangle, KeyRound, MailCheck, X } from 'lucide-react';
 import Link from 'next/link';
 import {
   AUTH_INPUT_CLASS_NAME,
   AUTH_STANDALONE_LINK_CLASS_NAME,
-  AuthDivider,
   AuthFormAlert,
   AuthIntro,
   AuthLoading,
@@ -192,10 +193,86 @@ export function SignInForm() {
   };
 
   const hasOAuth = hasOAuthProviders(oauthProviders);
+  const loginMethods: ('email' | 'sso' | 'ad')[] = ['email'];
+  if (hasOAuth) loginMethods.push('sso');
+  if (adEnabled) loginMethods.push('ad');
+  const showTabs = loginMethods.length > 1;
 
   if (checkingSetup) {
     return <AuthLoading label={tAuth('loading')} />;
   }
+
+  const emailForm = (
+    <form onSubmit={handleSubmit} className="space-y-5">
+      <div className="space-y-2">
+        <Label htmlFor="email">{tAuth('email_label')}</Label>
+        <Input
+          id="email"
+          type="email"
+          className={AUTH_INPUT_CLASS_NAME}
+          placeholder={tAuth('email_placeholder')}
+          value={email}
+          onChange={(e) => {
+            setEmail(e.target.value);
+            if (error) setError('');
+          }}
+          required
+          autoComplete="email"
+          aria-invalid={!!error}
+          aria-describedby={error ? 'signin-form-error' : undefined}
+        />
+      </div>
+
+      <div className="space-y-2">
+        <div className="flex flex-wrap items-center justify-between gap-x-3">
+          <Label htmlFor="password">{tAuth('password_label')}</Label>
+          <Link
+            href="/auth/forgot-password"
+            className={`${AUTH_STANDALONE_LINK_CLASS_NAME} text-xs`}
+          >
+            {tAuth('forgot_password')}
+          </Link>
+        </div>
+        <Input
+          id="password"
+          type="password"
+          className={AUTH_INPUT_CLASS_NAME}
+          placeholder={tAuth('password_placeholder')}
+          value={password}
+          onChange={(e) => {
+            setPassword(e.target.value);
+            if (error) setError('');
+          }}
+          required
+          autoComplete="current-password"
+          aria-invalid={!!error}
+          aria-describedby={error ? 'signin-form-error' : undefined}
+        />
+      </div>
+
+      {error ? <AuthFormAlert id="signin-form-error">{error}</AuthFormAlert> : null}
+
+      <Button type="submit" className="w-full text-sm" size="xl" disabled={loading}>
+        {loading ? tAuth('signin_loading') : tAuth('signin')}
+      </Button>
+    </form>
+  );
+
+  const signupFooter = (
+    <p className="text-muted-foreground flex flex-wrap items-center gap-x-1 text-sm">
+      <span>{tAuth('no_account')}</span>
+      <Link
+        href={
+          projectInviteToken
+            ? `/auth/signup?projectInviteToken=${encodeURIComponent(projectInviteToken)}`
+            : '/auth/signup'
+        }
+        className={AUTH_STANDALONE_LINK_CLASS_NAME}
+      >
+        {tAuth('signup')}
+      </Link>
+    </p>
+  );
 
   return (
     <div className="animate-fade-up space-y-7">
@@ -223,88 +300,44 @@ export function SignInForm() {
         </div>
       )}
 
-      {hasOAuth ? (
-        <OAuthProviderButtons
-          providers={oauthProviders}
-          projectInviteToken={projectInviteToken}
-          callbackUrl={callbackUrl}
-          githubLabel={tAuth('continue_with_github')}
-          googleLabel={tAuth('continue_with_google')}
-          oidcLabel={tAuth('continue_with_oidc', { name: oidcName ?? 'SSO' })}
-        />
-      ) : null}
+      {showTabs ? (
+        <Tabs defaultValue="email" className="w-full">
+          <TabsList
+            className={cn(
+              'grid w-full',
+              loginMethods.length === 2 ? 'grid-cols-2' : 'grid-cols-3'
+            )}
+          >
+            <TabsTrigger value="email">{tAuth('signin_tab_email')}</TabsTrigger>
+            {hasOAuth ? (
+              <TabsTrigger value="sso">{tAuth('signin_tab_sso')}</TabsTrigger>
+            ) : null}
+            {adEnabled ? <TabsTrigger value="ad">{tAuth('signin_tab_ad')}</TabsTrigger> : null}
+          </TabsList>
+          <TabsContent value="email">{emailForm}</TabsContent>
+          {hasOAuth ? (
+            <TabsContent value="sso">
+              <OAuthProviderButtons
+                providers={oauthProviders}
+                projectInviteToken={projectInviteToken}
+                callbackUrl={callbackUrl}
+                githubLabel={tAuth('continue_with_github')}
+                googleLabel={tAuth('continue_with_google')}
+                oidcLabel={tAuth('continue_with_oidc', { name: oidcName ?? 'SSO' })}
+              />
+            </TabsContent>
+          ) : null}
+          {adEnabled ? (
+            <TabsContent value="ad">
+              <ADSignInForm dividerLabel={tAuth('ad_divider')} showDivider={false} />
+            </TabsContent>
+          ) : null}
+        </Tabs>
+      ) : (
+        emailForm
+      )}
 
-      {adEnabled ? <ADSignInForm dividerLabel={tAuth('ad_divider')} /> : null}
-
-      {hasOAuth ? <AuthDivider>{tAuth('or_continue_with_email')}</AuthDivider> : null}
-
-      <form onSubmit={handleSubmit} className="space-y-5">
-        <div className="space-y-2">
-          <Label htmlFor="email">{tAuth('email_label')}</Label>
-          <Input
-            id="email"
-            type="email"
-            className={AUTH_INPUT_CLASS_NAME}
-            placeholder={tAuth('email_placeholder')}
-            value={email}
-            onChange={(e) => {
-              setEmail(e.target.value);
-              if (error) setError('');
-            }}
-            required
-            autoComplete="email"
-            aria-invalid={!!error}
-            aria-describedby={error ? 'signin-form-error' : undefined}
-          />
-        </div>
-
-        <div className="space-y-2">
-          <div className="flex flex-wrap items-center justify-between gap-x-3">
-            <Label htmlFor="password">{tAuth('password_label')}</Label>
-            <Link
-              href="/auth/forgot-password"
-              className={`${AUTH_STANDALONE_LINK_CLASS_NAME} text-xs`}
-            >
-              {tAuth('forgot_password')}
-            </Link>
-          </div>
-          <Input
-            id="password"
-            type="password"
-            className={AUTH_INPUT_CLASS_NAME}
-            placeholder={tAuth('password_placeholder')}
-            value={password}
-            onChange={(e) => {
-              setPassword(e.target.value);
-              if (error) setError('');
-            }}
-            required
-            autoComplete="current-password"
-            aria-invalid={!!error}
-            aria-describedby={error ? 'signin-form-error' : undefined}
-          />
-        </div>
-
-        {error ? <AuthFormAlert id="signin-form-error">{error}</AuthFormAlert> : null}
-
-        <Button type="submit" className="w-full text-sm" size="xl" disabled={loading}>
-          {loading ? tAuth('signin_loading') : tAuth('signin')}
-        </Button>
-      </form>
-
-      <p className="text-muted-foreground flex flex-wrap items-center gap-x-1 text-sm">
-        <span>{tAuth('no_account')}</span>
-        <Link
-          href={
-            projectInviteToken
-              ? `/auth/signup?projectInviteToken=${encodeURIComponent(projectInviteToken)}`
-              : '/auth/signup'
-          }
-          className={AUTH_STANDALONE_LINK_CLASS_NAME}
-        >
-          {tAuth('signup')}
-        </Link>
-      </p>
+      {signupFooter}
     </div>
   );
 }

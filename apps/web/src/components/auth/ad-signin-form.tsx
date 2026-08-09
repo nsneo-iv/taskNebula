@@ -19,7 +19,13 @@ import { acceptProjectInviteAfterSignIn, normalizeCallbackUrl } from './signin-u
  * the platform has AD configured (AD_ENABLED + AD_LDAP_URL + search base).
  * Credentials are validated server-side by the `ad` NextAuth provider.
  */
-export function ADSignInForm({ dividerLabel }: { dividerLabel: string }) {
+export function ADSignInForm({
+  dividerLabel,
+  showDivider = true,
+}: {
+  dividerLabel: string;
+  showDivider?: boolean;
+}) {
   const router = useRouter();
   const searchParams = useSearchParams();
   const tAuth = useTranslations('auth');
@@ -59,7 +65,7 @@ export function ADSignInForm({ dividerLabel }: { dividerLabel: string }) {
 
   return (
     <div className="space-y-7">
-      <AuthDivider>{dividerLabel}</AuthDivider>
+      {showDivider ? <AuthDivider>{dividerLabel}</AuthDivider> : null}
 
       <form onSubmit={handleSubmit} className="space-y-5">
         <div className="space-y-2">

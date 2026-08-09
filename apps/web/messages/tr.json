@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Ya da e-posta ile devam et",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Geçersiz e-posta veya parola",
     "generic_error": "Bir hata oluştu. Lütfen tekrar dene.",
     "banner_email_verified": "E-posta doğrulandı. Devam etmek için giriş yap.",

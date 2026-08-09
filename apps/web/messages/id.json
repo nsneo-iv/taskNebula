@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Atau lanjutkan dengan email",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Email atau kata sandi tidak valid",
     "generic_error": "Terjadi kesalahan. Silakan coba lagi.",
     "banner_email_verified": "Email terverifikasi. Masuk untuk melanjutkan.",

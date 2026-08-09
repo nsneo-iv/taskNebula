@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Hoặc tiếp tục bằng email",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Email hoặc mật khẩu không hợp lệ",
     "generic_error": "Đã xảy ra lỗi. Vui lòng thử lại.",
     "banner_email_verified": "Email đã được xác minh. Đăng nhập để tiếp tục.",

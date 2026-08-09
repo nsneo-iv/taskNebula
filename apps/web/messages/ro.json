@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Sau continuă cu e-mail",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "E-mail sau parolă invalide",
     "generic_error": "A apărut o eroare. Te rugăm să încerci din nou.",
     "banner_email_verified": "E-mail verificat. Autentifică-te pentru a continua.",

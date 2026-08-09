@@ -88,6 +88,9 @@
 
     "continue_with_oidc": "Continue with {name}",
     "or_continue_with_email": "Или продолжить с помощью электронной почты",
+    "signin_tab_email": "Email",
+    "signin_tab_sso": "SSO",
+    "signin_tab_ad": "Active Directory",
     "invalid_credentials": "Неверный адрес электронной почты или пароль",
     "generic_error": "Произошла ошибка. Пожалуйста, попробуйте ещё раз.",
     "banner_email_verified": "Электронная почта подтверждена. Войдите, чтобы продолжить.",
