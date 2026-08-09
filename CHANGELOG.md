@@ -6,6 +6,14 @@ The format is based on [Keep a Changelog 1.1.0](https://keepachangelog.com/en/1.
 
 ## [Unreleased]
 
+## [0.15.1] - 2026-08-09
+
+### Changed
+
+- **Version alignment for the fork's separate Docker build.** This patch
+  release marks the independently built image (`nsneo-iv/tasknebula:0.15.1`)
+  published alongside the upstream v0.15.0 release.
+
 ## [0.15.0] - 2026-08-09
 
 ### Added
